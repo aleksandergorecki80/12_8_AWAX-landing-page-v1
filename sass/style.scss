@@ -1,0 +1,262 @@
+@import 'global';
+@import '_grid';
+
+*{
+    box-sizing: border-box;
+//    border: 1px solid red;
+}
+
+.awax-btn {
+    background-color: $brand-color;
+    padding: 5px 40px !important;
+    border-radius: 30px !important; 
+    color: $second-color;
+}
+section {
+    .container{
+        padding: 30px 0 40px 0;
+        .row{
+            margin: 0;
+        }
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h3+p {
+        @extend h3;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $main-font;
+        font-size: 12px;
+    }
+    h4 {
+        @extend h3;
+        font-size: 16px;
+    }
+    h4+p{
+        text-align: center;
+        font-weight: normal;
+        color: $subheading-color;
+        font-size: 12px;
+        
+    }
+}
+
+header {
+    .container {
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+        .logo {
+            margin-right: 50px;
+            display: inline-block;
+        }
+        nav {
+            color: $second-color;
+            display: inline-block;
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                
+                li {
+                    display: inline-block;
+                    font-family: $main-font;
+                    font-weight: bold;
+                    font-size: 12px;
+                    padding: 50px 0;
+                }
+                a {
+                    //line-height: 100px;
+                    text-decoration: none;
+                    color: $second-color;
+                    padding: 45px 5px;
+                    &:hover {
+                        //color:red;
+                        border-bottom: 5px solid $brand-color;
+                    }
+                }
+            }
+        }
+        .menu-icon {
+            display: none;
+        }
+    }
+}
+
+.hero {
+    padding: 0;
+    margin: 0;
+    .container{
+        background-image: url('../images/jumbotron-bg.jpg');
+        height: 90vh;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $second-color;
+        flex-direction: column;
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex: 2;
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: 48px;
+            margin: 0;
+        }
+        h2 {
+            color: $brand-color;
+        }
+        h3 {
+            margin: 20px 0 30px 0;
+            font-size: 18px;
+        }
+        .bullets{
+            ul {
+                margin: 0;
+                padding: 0;
+                align-self: flex-end;
+                margin-bottom: 50px;
+                li {
+                    display: inline-block;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    border-radius: 50%;
+                    padding: 5px 5px;
+                    cursor: pointer;
+                    border: 1px solid $brand-color;
+                
+                    &:hover{
+                        background-color: $brand-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.about-us {
+    .container {
+        background-color: $thirt-color;
+        img {
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 3px 2px 10px 0px rgba(0,0,0,0.5);
+        }
+        h3+p {
+            color: $subheading-color;
+        }
+
+    }
+}
+
+.services {
+    .container {
+        background-color: $main-color;
+        color: $second-color;
+        [class*="col-"] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-left: 1px solid $subheading-color;
+            height: 170px;
+            padding: 20px;
+        }
+        [class*="col-"]:last-child {
+            border-right: 1px solid $subheading-color;
+        }
+        p {
+
+        }
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.our-projects{
+    .container {
+        background-color: $thirt-color;
+
+    }
+    h3+p {
+        color: $subheading-color;
+    }
+    .project-menu{
+        display: flex;
+        justify-content: center;
+        ul {
+            margin: 0;
+            padding: 0 25px;
+            border: 1px solid $fifth-color;
+            border-radius: 50px;
+            background-color: $fourth-color;
+            li{
+                display: inline-block;
+                
+                
+                padding: 20px 0px;
+                
+                a {
+                    text-decoration: none;
+                    padding: 15px 25px;
+                    //background-color:red;
+                    color: $main-color;
+                    border-right: 1px solid $fifth-color;    
+                    &:hover{
+                        border-bottom: 5px solid $brand-color;
+                    }
+                }
+            }
+            li:last-of-type > a {
+                    border-right: none;
+           }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// our team
+.our-team{
+    .container {
+        .team-cards {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
