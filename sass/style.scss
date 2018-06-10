@@ -233,6 +233,47 @@ header {
            }
         }
     }
+    .row{
+     
+    }
+    [class*="col-"] {
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+    .div-for-foto{
+        position: relative;
+        background-color: red;
+
+    }
+     .div-for-foto:hover .overlay{
+               opacity: 0.5;
+                width: 100%;
+                height: 100%; 
+
+    }
+
+.div-for-foto:hover  p {
+    display: inline;
+}
+
+     .overlay {
+        position: absolute;
+        background-color: black;
+        transition: .3s;
+        width: 100%;
+        height: 0;
+        p {
+            display: none;
+            transition: .3s;
+            color: white;
+            }
+        }
+    }
+
+
 }
 
 
