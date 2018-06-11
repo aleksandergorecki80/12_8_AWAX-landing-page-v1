@@ -211,6 +211,12 @@
   padding: 5px 40px !important;
   border-radius: 30px !important;
   color: #ffffff;
+  outline: none !important;
+}
+
+.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 section .container {
