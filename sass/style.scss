@@ -233,9 +233,12 @@ header {
            }
         }
     }
-    .row{
-     
+    
+    .projects-gallery{
+        max-width: 70%;
+        margin: 20px auto;
     }
+
     [class*="col-"] {
         
         img {
@@ -270,6 +273,8 @@ header {
                 transition: .3s;
                 color: white;
                 text-align: center;
+                padding: 5px;
+                margin: 0;
                 }
             p:first-child {
                 font-size: 18px;

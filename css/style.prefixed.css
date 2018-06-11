@@ -458,6 +458,11 @@ header .container .menu-icon {
   border-right: none;
 }
 
+.our-projects .projects-gallery {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
 .our-projects [class*="col-"] img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -498,6 +503,8 @@ header .container .menu-icon {
   transition: .3s;
   color: white;
   text-align: center;
+  padding: 5px;
+  margin: 0;
 }
 
 .our-projects [class*="col-"] .overlay p:first-child {
