@@ -203,7 +203,7 @@
 
 * {
   box-sizing: border-box;
-  /*    border: 1px solid red;   */
+  /*   border: 1px solid red;   */
 }
 
 .awax-btn {
@@ -355,15 +355,22 @@ header .container .menu-icon {
   font-size: 18px;
 }
 
-.hero .container .bullets ul {
+.hero .container .bullets {
+  margin-bottom: 50px;
+}
+
+.bullets {
+  text-align: center;
+}
+
+.bullets ul {
   margin: 0;
   padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 50px;
 }
 
-.hero .container .bullets ul li {
+.bullets ul li {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -374,7 +381,7 @@ header .container .menu-icon {
   border: 1px solid #b88b58;
 }
 
-.hero .container .bullets ul li:hover {
+.bullets ul li:hover {
   background-color: #b88b58;
 }
 
@@ -518,9 +525,78 @@ header .container .menu-icon {
 }
 
 /* our team  */
+.our-team .container {
+  background-image: url("../images/our-team-bg.jpg");
+}
+
 .our-team .container .team-cards {
   width: 80%;
   margin: 0 auto;
+}
+
+.our-team .container p {
+  color: #aeaeae;
+}
+
+.our-team .container [class*="col-"] div {
+  background-color: #ffffff;
+}
+
+.our-team h3, .our-team section h3 + p, section .our-team h3 + p, .our-team section h4, section .our-team h4 {
+  color: #ffffff;
+}
+
+.our-team .team-member {
+  padding: 25px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.our-team .team-member p {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+.our-team .team-member p:nth-child(2) {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.our-team .team-member .social-media {
+  margin-top: 20px;
+}
+
+.our-team .team-member .social {
+  background-color: #bebebe;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.our-team .team-member .social:hover {
+  background-color: #b88b58;
+}
+
+.our-team img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.our-team .bullets {
+  margin-top: 25px;
 }
 
 .clearfix::after {
