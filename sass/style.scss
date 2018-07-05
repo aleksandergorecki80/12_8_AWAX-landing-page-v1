@@ -1,5 +1,6 @@
-@import 'global';
+@import 'variables';
 @import '_grid';
+
 
 
 *{
@@ -7,18 +8,7 @@
  /*   border: 1px solid red;   */
 }
 
-.awax-btn {
-    background-color: $brand-color;
-    padding: 5px 40px !important;
-    border-radius: 30px !important; 
-    color: $second-color;
-    outline: none !important; 
-}
 
-.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
-      outline: none !important;
-  box-shadow: none !important;
-}
 
 section {
     .container{
@@ -33,15 +23,13 @@ section {
         text-transform: uppercase;
         text-align: center;
     }
-    h3+p {
+    p {
         @extend h3;
         font-size: 12px;
         font-weight: 600;
         margin-bottom: 30px;
-    }
-    p {
         font-family: $main-font;
-        font-size: 12px;
+        color: $subheading-color;
     }
     h4 {
         @extend h3;
@@ -140,29 +128,6 @@ header {
     }
     }
 }
-
-        .bullets{
-            text-align: center;
-            ul {
-                margin: 0;
-                padding: 0;
-                align-self: flex-end;
-                li {
-                    display: inline-block;
-                    padding: 0;
-                    margin: 0;
-                    text-align: center;
-                    border-radius: 50%;
-                    padding: 5px 5px;
-                    cursor: pointer;
-                    border: 1px solid $brand-color;
-                
-                    &:hover{
-                        background-color: $brand-color;
-                    }
-                }
-            }
-        }
 
 .about-us {
     .container {
@@ -360,105 +325,35 @@ header {
     }
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+/* happy kliends*/
+
+.clients{
+    text-align: center;
+    .client-profile{
+        p{
+            font-weight: 700;
+            text-transform: none;
+            color: $main-color;
+            font-size: 18px;
+            margin: 0;
+            &:nth-child(3){
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .quotation{
+            display: flex;
+            justify-content: center;
+            .plain-text{
+                font-size: 12px;
+                color: $plain-text-color;
+                font-weight: 200;
+                width: 60%;
+            }
+        }
+        img {
+            border-radius: 50%;
+        }
+    }
 }
 
-
-
-
-
-
-
-@media screen and (min-width: 768px ) and (max-width: 1200px)  {
-
-}
-
-@media  screen and (max-width: 768px ) {
-    header {
-    .container{
-        display: block;
-        
-       .logo {
-            //float: left;
-        }
-        .menu-icon {
-            float: right;
-            display: block;
-        }
-        nav {
-            display: none;
-            ul {
-                display: block;
-                
-                li {
-                    display: block;
-                    padding: 10px;
-                    text-align: center;
-                }
-                a {
-                    padding:0;
-                    &:hover{
-                        border-bottom: 0px;
-                    }
-                }
-            }
-        }
-        .menu-icon {
-            margin-top: 10px;
-            font-size: 24px;
-            display: block;
-            font-size: 24px;
-            color: white;
-           // border: 1px solid white;
-            background-color: $brand-color;
-            button {
-                background-color: $main-color
-            }
-        }
-    }
-  }
-
-
-    .hero {
-        .container{
-            .content{
-            }
-            h1, h2, h3 {
-                font-size: 28px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-            .bullets{
-                ul {
-                    margin-bottom: 50px;
-                    li {
-
-                        &:hover{
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-
-    .services {
-        .container{
-            [class*="col-"]:nth-child(1), 
-            [class*="col-"]:nth-child(2) {
-                border-bottom: 1px solid $subheading-color;
-            }
-            [class*="col-"]{                
-                padding-top: 10px;
-                height: 200px;
-            }
-        }
-    }
-
-
-
-} /*end of media*/

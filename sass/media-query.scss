@@ -1,0 +1,93 @@
+@import 'variables';
+@import '_grid';
+
+@media screen and (min-width: 768px ) and (max-width: 1200px)  {
+
+}
+
+@media  screen and (max-width: 768px ) {
+    header {
+    .container{
+        display: block;
+        
+       .logo {
+            //float: left;
+        }
+        .menu-icon {
+            float: right;
+            display: block;
+        }
+        nav {
+            display: none;
+            ul {
+                display: block;
+                
+                li {
+                    display: block;
+                    padding: 10px;
+                    text-align: center;
+                }
+                a {
+                    padding:0;
+                    &:hover{
+                        border-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .menu-icon {
+            margin-top: 10px;
+            font-size: 24px;
+            display: block;
+            font-size: 24px;
+            color: white;
+           // border: 1px solid white;
+            background-color: $brand-color;
+            button {
+                background-color: $main-color
+            }
+        }
+    }
+  }
+
+
+    .hero {
+        .container{
+            .content{
+            }
+            h1, h2, h3 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            .bullets{
+                ul {
+                    margin-bottom: 50px;
+                    li {
+
+                        &:hover{
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .services {
+        .container{
+            [class*="col-"]:nth-child(1), 
+            [class*="col-"]:nth-child(2) {
+                border-bottom: 1px solid $subheading-color;
+            }
+            [class*="col-"]{                
+                padding-top: 10px;
+                height: 200px;
+            }
+        }
+    }
+
+
+
+} /*end of media*/
