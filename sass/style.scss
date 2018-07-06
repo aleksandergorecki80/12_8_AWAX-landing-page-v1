@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-   border: 1px solid red;   
+/*   border: 1px solid red;   */
 }
 
 
@@ -417,20 +417,27 @@ header {
 
 .social {
     .content {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 10px auto;
+
         p {
             font-size: 10px;
             margin: 0;
         }
-        width: 60%;
-        margin: 0 auto;
-        [class*="col-"]{
+        .logo-socialmedia {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: row;
+            margin: 0 20px;
        }
-       [class*="col-"]:first-child{
-           flex-grow: 2;
+       .logo-socialmedia:first-child{
+           flex-grow: 1;
+           img {
+               margin-right: 10px;
+           }
        }
         .social {
             background-color: #bebebe;
@@ -445,5 +452,31 @@ header {
                 background-color: #b88b58;
             }
         }
+    }
+}
+
+.contact-us {
+    @include basicSectionSettings(blue, red);
+    @include content(50%);
+    .input-container {
+        width: 49%;
+        float: left;
+    }
+    .input-container:nth-child(2) {
+        float: right;
+    }
+    input, textarea {
+        background-color: $thirt-color;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 2px solid $plain-text-color;
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 100px;
+        resize: none;
     }
 }

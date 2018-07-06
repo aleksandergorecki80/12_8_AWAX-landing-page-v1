@@ -49,3 +49,11 @@
     color: $color;
     text-align: center;
 }
+
+/* sets width of the content*/
+@mixin content($width) {
+    .content {
+        width: $width;
+        margin: 0 auto;
+    }
+}
