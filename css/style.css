@@ -156,34 +156,6 @@
   box-sizing: border-box;
   /*   border: 1px solid red;   */ }
 
-section .container {
-  padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
-  section .container .row {
-    margin: 0; }
-
-section h3, section p, section h4 {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center; }
-
-section p {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  font-family: "Montserrat", sans-serif;
-  color: #aeaeae; }
-
-section h4 {
-  font-size: 16px; }
-
-section h4 + p {
-  text-align: center;
-  font-weight: normal;
-  color: #aeaeae;
-  font-size: 12px; }
-
 header .container {
   background-color: #000000;
   display: -webkit-box;
@@ -259,7 +231,7 @@ header .container {
       -webkit-box-flex: 2;
       -ms-flex: 2;
       flex: 2; }
-    .hero .container h1, .hero .container h2, .hero .container h3, .hero .container section p, section .hero .container p, .hero .container section h4, section .hero .container h4 {
+    .hero .container h1, .hero .container h2, .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4 {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
@@ -267,11 +239,39 @@ header .container {
       margin: 0; }
     .hero .container h2 {
       color: #b88b58; }
-    .hero .container h3, .hero .container section p, section .hero .container p, .hero .container section h4, section .hero .container h4 {
+    .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4 {
       margin: 20px 0 30px 0;
       font-size: 18px; }
     .hero .container .bullets {
       margin-bottom: 50px; }
+
+.about-us .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .about-us .container .row {
+    margin: 0; }
+
+.about-us h3, .about-us h3 + p, .about-us h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.about-us h3 + p, .about-us h3 + p + p, .about-us h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #aeaeae; }
+
+.about-us h4 {
+  font-size: 16px; }
+
+.about-us h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
 
 .about-us .container {
   background-color: #f7f7f7; }
@@ -281,7 +281,7 @@ header .container {
     object-fit: cover;
     -webkit-box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5); }
-  .about-us .container h3 + p, .about-us .container section p + p, section .about-us .container p + p, .about-us .container section h4 + p, section .about-us .container h4 + p {
+  .about-us .container h3 + p, .about-us .container h3 + p + p, .about-us .container h4 + p {
     color: #aeaeae; }
 
 .services .container {
@@ -312,7 +312,7 @@ header .container {
 .our-projects .container {
   background-color: #f7f7f7; }
 
-.our-projects h3 + p, .our-projects section p + p, section .our-projects p + p, .our-projects section h4 + p, section .our-projects h4 + p {
+.our-projects h3 + p, .our-projects .about-us h3 + p + p, .about-us .our-projects h3 + p + p, .our-projects .about-us h4 + p, .about-us .our-projects h4 + p {
   color: #aeaeae; }
 
 .our-projects .project-menu {
@@ -405,7 +405,7 @@ header .container {
   .our-team .container [class*="col-"] div {
     background-color: #ffffff; }
 
-.our-team h3, .our-team section p, section .our-team p, .our-team section h4, section .our-team h4 {
+.our-team h3, .our-team .about-us h3 + p, .about-us .our-team h3 + p, .our-team .about-us h4, .about-us .our-team h4 {
   color: #ffffff; }
 
 .our-team .team-member {
@@ -517,3 +517,20 @@ header .container {
         border-top: 1px solid #7e7e7e;
         padding: 0;
         margin: 5px auto; }
+
+.premium .premium-offer ul {
+  list-style-type: none; }
+
+.premium .premium-offer li {
+  margin-bottom: 15px; }
+
+.premium .premium-offer li::before {
+  content: '';
+  background: url("../images/tick-icon.svg");
+  /*url of image*/
+  height: 34px;
+  /*height of image*/
+  width: 37px;
+  /*width of image*/
+  position: absolute;
+  left: -5px; }
