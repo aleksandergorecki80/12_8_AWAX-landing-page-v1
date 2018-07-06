@@ -1,49 +1,16 @@
 @import 'variables';
 @import '_grid';
-
+@import 'mixins';
 
 
 *{
     box-sizing: border-box;
- /*   border: 1px solid red;   */
+   border: 1px solid red;   
 }
 
 
 
-@mixin basicSectionSettings {
-        .container{
-            padding: 30px 0 40px 0;
-            background-color: $thirt-color;
-            .row{
-                margin: 0;
-            }
-        }
-        h3 {
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        h3+p {
-            @extend h3;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 30px;
-            font-family: $main-font;
-            color: $subheading-color;
-        }
-        h4 {
-            @extend h3;
-            font-size: 16px;
-        }
-        h4+p{
-            text-align: center;
-            font-weight: normal;
-            color: $subheading-color;
-            font-size: 12px;
-            
-        }
-    }
+
 
 header {
     .container {
@@ -131,7 +98,7 @@ header {
 }
 
 .about-us {
-    @include basicSectionSettings;
+    @include basicSectionSettings(red, $subheading-color);
     .container {
         background-color: $thirt-color;
         img {
@@ -147,6 +114,7 @@ header {
 }
 
 .services {
+    @include basicSectionSettings(blue, red);
     .container {
         background-color: $main-color;
         color: $second-color;
@@ -172,13 +140,12 @@ header {
 }
 
 .our-projects{
+    @include basicSectionSettings(blue, red);
     .container {
         background-color: $thirt-color;
 
     }
-    h3+p {
-        color: $subheading-color;
-    }
+
     .project-menu{
         display: flex;
         justify-content: center;
@@ -264,15 +231,14 @@ header {
 
 /* our team  */
 .our-team{
+    @include basicSectionSettings(blue, red);
     .container {
         .team-cards {
             width: 80%;
             margin: 0 auto;
         }
         background-image: url('../images/our-team-bg.jpg');
-        p {
-            color: $sixth-color;
-        }
+
        [class*="col-"] {
            div {
                background-color: $second-color;
@@ -280,26 +246,13 @@ header {
             
         }
     }
-    h3 {
-        color: $second-color;
-    }
     .team-member{
         padding: 25px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        p {
-            padding: 0;
-            margin: 0;
-            color: $main-color;
-            &:nth-child(2) {
-                margin-top: 20px;
-                text-transform: uppercase;
-                font-size: 1rem;
-                font-weight: 500;
-             }
-        }
+
         .social-media{
             margin-top: 20px;
         }
@@ -330,6 +283,7 @@ header {
 /* happy kliends*/
 
 .clients{
+    @include basicSectionSettings(blue, red);
     .container {
         background-color: $thirt-color;
     }
@@ -364,11 +318,7 @@ header {
 
 /* price */
 
-@mixin containerColors($color) {
-    border-top: 1px solid $container-borders;
-    border-bottom: 1px solid $container-borders;
-    background-color: $color;
-}
+
 
 .logotyps{
     .container {
@@ -377,6 +327,7 @@ header {
 }
 
 .price{
+    @include basicSectionSettings(blue, red);
 .container{
     @include containerColors($thirt-color);
     .row{
@@ -388,8 +339,7 @@ header {
                 font-weight: 600;
             }
             h2 {
-                font-family: $numbers-font;
-                font-weight: 700;
+                @include largeNumbers($main-color, 700);
             }
             text-align: center;
             background-color: $second-color;
@@ -416,7 +366,12 @@ header {
 }
 
 .premium {
+    @include basicSectionSettings(blue, red);
     .premium-offer {
+        h5 {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
         ul{
             list-style-type: none;
         }
@@ -432,7 +387,63 @@ header {
             left: -5px;
             }
         p {
+            font-size: 14px;
+            color: $plain-text-color;
+            display: inline-block;
+            width: 70%;
+            margin-bottom: 0;
+        }
+    }
+}
 
+
+.facts {
+    @include basicSectionSettings(blue, red);
+   .container { 
+       @include containerColors($main-color);
+      h2 { 
+          @include largeNumbers($brand-color, 700);
+          font-size: 42px;
+      }
+      hr {
+        width: 5%;
+        border-top: 2px solid $plain-text-color;
+        padding: 0;
+        margin: 5px auto;
+    }
+    }
+}
+
+
+.social {
+    .content {
+        p {
+            font-size: 10px;
+            margin: 0;
+        }
+        width: 60%;
+        margin: 0 auto;
+        [class*="col-"]{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+       }
+       [class*="col-"]:first-child{
+           flex-grow: 2;
+       }
+        .social {
+            background-color: #bebebe;
+            border-radius: 50%;
+            color: $second-color;
+            font-size: 16px;
+            padding: 5px;
+            width: 27px;
+            height: 27px;
+            cursor: pointer;
+            &:hover {
+                background-color: #b88b58;
+            }
         }
     }
 }

@@ -1,0 +1,51 @@
+/* settings for containers, fonts paddings etc*/
+@mixin basicSectionSettings($headerColor, $subHeaderColor) {
+    .container{
+        padding: 30px 0 40px 0;
+        background-color: $thirt-color;
+        .row{
+            margin: 0;
+        }
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        color: $headerColor
+    }
+    h3+p {
+        @extend h3;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-family: $main-font;
+        color: $subHeaderColor;
+    }
+    h4 {
+        @extend h3;
+        font-size: 16px;
+    }
+    h4+p{
+        text-align: center;
+        font-weight: normal;
+        color: $subheading-color;
+        font-size: 12px;
+        
+    }
+}
+
+/* sets background and border color */
+@mixin containerColors($color) {
+    border-top: 1px solid $container-borders;
+    border-bottom: 1px solid $container-borders;
+    background-color: $color;
+}
+
+/*  large numbers   */
+@mixin largeNumbers($color, $fontWeight) {
+    font-family: $numbers-font;
+    font-weight: $fontWeight;
+    color: $color;
+    text-align: center;
+}

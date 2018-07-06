@@ -151,10 +151,13 @@
     display: table;
     clear: both; } }
 
+/* settings for containers, fonts paddings etc*/
+/* sets background and border color */
+/*  large numbers   */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*   border: 1px solid red;   */ }
+  border: 1px solid red; }
 
 header .container {
   background-color: #000000;
@@ -231,7 +234,7 @@ header .container {
       -webkit-box-flex: 2;
       -ms-flex: 2;
       flex: 2; }
-    .hero .container h1, .hero .container h2, .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4 {
+    .hero .container h1, .hero .container h2, .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4, .hero .container .services h3 + p, .services .hero .container h3 + p, .hero .container .services h4, .services .hero .container h4, .hero .container .our-projects h3 + p, .our-projects .hero .container h3 + p, .hero .container .our-projects h4, .our-projects .hero .container h4, .hero .container .our-team h3 + p, .our-team .hero .container h3 + p, .hero .container .our-team h4, .our-team .hero .container h4, .hero .container .clients h3 + p, .clients .hero .container h3 + p, .hero .container .clients h4, .clients .hero .container h4, .hero .container .price h3 + p, .price .hero .container h3 + p, .hero .container .price h4, .price .hero .container h4, .hero .container .premium h3 + p, .premium .hero .container h3 + p, .hero .container .premium h4, .premium .hero .container h4, .hero .container .facts h3 + p, .facts .hero .container h3 + p, .hero .container .facts h4, .facts .hero .container h4 {
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
@@ -239,7 +242,7 @@ header .container {
       margin: 0; }
     .hero .container h2 {
       color: #b88b58; }
-    .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4 {
+    .hero .container h3, .hero .container .about-us h3 + p, .about-us .hero .container h3 + p, .hero .container .about-us h4, .about-us .hero .container h4, .hero .container .services h3 + p, .services .hero .container h3 + p, .hero .container .services h4, .services .hero .container h4, .hero .container .our-projects h3 + p, .our-projects .hero .container h3 + p, .hero .container .our-projects h4, .our-projects .hero .container h4, .hero .container .our-team h3 + p, .our-team .hero .container h3 + p, .hero .container .our-team h4, .our-team .hero .container h4, .hero .container .clients h3 + p, .clients .hero .container h3 + p, .hero .container .clients h4, .clients .hero .container h4, .hero .container .price h3 + p, .price .hero .container h3 + p, .hero .container .price h4, .price .hero .container h4, .hero .container .premium h3 + p, .premium .hero .container h3 + p, .hero .container .premium h4, .premium .hero .container h4, .hero .container .facts h3 + p, .facts .hero .container h3 + p, .hero .container .facts h4, .facts .hero .container h4 {
       margin: 20px 0 30px 0;
       font-size: 18px; }
     .hero .container .bullets {
@@ -251,13 +254,14 @@ header .container {
   .about-us .container .row {
     margin: 0; }
 
-.about-us h3, .about-us h3 + p, .about-us h4 {
+.about-us h3, .about-us h3 + p, .about-us h4, .about-us .services h3 + p, .about-us .our-projects h3 + p, .about-us .our-team h3 + p, .about-us .clients h3 + p, .about-us .price h3 + p, .about-us .premium h3 + p, .about-us .facts h3 + p {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  color: red; }
 
-.about-us h3 + p, .about-us h3 + p + p, .about-us h4 + p {
+.about-us h3 + p, .about-us h3 + p + p, .about-us h4 + p, .about-us .services h3 + p + p, .about-us .services h4 + p, .about-us .our-projects h3 + p + p, .about-us .our-projects h4 + p, .about-us .our-team h3 + p + p, .about-us .our-team h4 + p, .about-us .clients h3 + p + p, .about-us .clients h4 + p, .about-us .price h3 + p + p, .about-us .price h4 + p, .about-us .premium h3 + p + p, .about-us .premium h4 + p, .about-us .facts h3 + p + p, .about-us .facts h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -281,8 +285,37 @@ header .container {
     object-fit: cover;
     -webkit-box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5); }
-  .about-us .container h3 + p, .about-us .container h3 + p + p, .about-us .container h4 + p {
+  .about-us .container h3 + p, .about-us .container h3 + p + p, .about-us .container h4 + p, .about-us .container .services h3 + p + p, .about-us .container .services h4 + p, .about-us .container .our-projects h3 + p + p, .about-us .container .our-projects h4 + p, .about-us .container .our-team h3 + p + p, .about-us .container .our-team h4 + p, .about-us .container .clients h3 + p + p, .about-us .container .clients h4 + p, .about-us .container .price h3 + p + p, .about-us .container .price h4 + p, .about-us .container .premium h3 + p + p, .about-us .container .premium h4 + p, .about-us .container .facts h3 + p + p, .about-us .container .facts h4 + p {
     color: #aeaeae; }
+
+.services .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .services .container .row {
+    margin: 0; }
+
+.services h3, .services .about-us h3 + p, .services h3 + p, .services h4, .services .our-projects h3 + p, .services .our-team h3 + p, .services .clients h3 + p, .services .price h3 + p, .services .premium h3 + p, .services .facts h3 + p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.services h3 + p, .services .about-us h3 + p + p, .services .about-us h4 + p, .services h3 + p + p, .services h4 + p, .services .our-projects h3 + p + p, .services .our-projects h4 + p, .services .our-team h3 + p + p, .services .our-team h4 + p, .services .clients h3 + p + p, .services .clients h4 + p, .services .price h3 + p + p, .services .price h4 + p, .services .premium h3 + p + p, .services .premium h4 + p, .services .facts h3 + p + p, .services .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.services h4 {
+  font-size: 16px; }
+
+.services h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
 
 .services .container {
   background-color: #000000;
@@ -310,10 +343,36 @@ header .container {
     width: 50px; }
 
 .our-projects .container {
+  padding: 30px 0 40px 0;
   background-color: #f7f7f7; }
+  .our-projects .container .row {
+    margin: 0; }
 
-.our-projects h3 + p, .our-projects .about-us h3 + p + p, .about-us .our-projects h3 + p + p, .our-projects .about-us h4 + p, .about-us .our-projects h4 + p {
-  color: #aeaeae; }
+.our-projects h3, .our-projects .about-us h3 + p, .our-projects .services h3 + p, .our-projects h3 + p, .our-projects h4, .our-projects .our-team h3 + p, .our-projects .clients h3 + p, .our-projects .price h3 + p, .our-projects .premium h3 + p, .our-projects .facts h3 + p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.our-projects h3 + p, .our-projects .about-us h3 + p + p, .our-projects .about-us h4 + p, .our-projects .services h3 + p + p, .our-projects .services h4 + p, .our-projects h3 + p + p, .our-projects h4 + p, .our-projects .our-team h3 + p + p, .our-projects .our-team h4 + p, .our-projects .clients h3 + p + p, .our-projects .clients h4 + p, .our-projects .price h3 + p + p, .our-projects .price h4 + p, .our-projects .premium h3 + p + p, .our-projects .premium h4 + p, .our-projects .facts h3 + p + p, .our-projects .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.our-projects h4 {
+  font-size: 16px; }
+
+.our-projects h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
+
+.our-projects .container {
+  background-color: #f7f7f7; }
 
 .our-projects .project-menu {
   display: -webkit-box;
@@ -396,17 +455,41 @@ header .container {
 
 /* our team  */
 .our-team .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .our-team .container .row {
+    margin: 0; }
+
+.our-team h3, .our-team .about-us h3 + p, .our-team .services h3 + p, .our-team .our-projects h3 + p, .our-team h3 + p, .our-team h4, .our-team .clients h3 + p, .our-team .price h3 + p, .our-team .premium h3 + p, .our-team .facts h3 + p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.our-team h3 + p, .our-team .about-us h3 + p + p, .our-team .about-us h4 + p, .our-team .services h3 + p + p, .our-team .services h4 + p, .our-team .our-projects h3 + p + p, .our-team .our-projects h4 + p, .our-team h3 + p + p, .our-team h4 + p, .our-team .clients h3 + p + p, .our-team .clients h4 + p, .our-team .price h3 + p + p, .our-team .price h4 + p, .our-team .premium h3 + p + p, .our-team .premium h4 + p, .our-team .facts h3 + p + p, .our-team .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.our-team h4 {
+  font-size: 16px; }
+
+.our-team h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
+
+.our-team .container {
   background-image: url("../images/our-team-bg.jpg"); }
   .our-team .container .team-cards {
     width: 80%;
     margin: 0 auto; }
-  .our-team .container p {
-    color: #aeaeae; }
   .our-team .container [class*="col-"] div {
     background-color: #ffffff; }
-
-.our-team h3, .our-team .about-us h3 + p, .about-us .our-team h3 + p, .our-team .about-us h4, .about-us .our-team h4 {
-  color: #ffffff; }
 
 .our-team .team-member {
   padding: 25px 0;
@@ -423,15 +506,6 @@ header .container {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .our-team .team-member p {
-    padding: 0;
-    margin: 0;
-    color: #000000; }
-    .our-team .team-member p:nth-child(2) {
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-size: 1rem;
-      font-weight: 500; }
   .our-team .team-member .social-media {
     margin-top: 20px; }
   .our-team .team-member .social {
@@ -456,6 +530,30 @@ header .container {
 /* happy kliends*/
 .clients {
   text-align: center; }
+  .clients .container {
+    padding: 30px 0 40px 0;
+    background-color: #f7f7f7; }
+    .clients .container .row {
+      margin: 0; }
+  .clients h3, .clients .about-us h3 + p, .clients .services h3 + p, .clients .our-projects h3 + p, .clients .our-team h3 + p, .clients h3 + p, .clients h4, .clients .price h3 + p, .clients .premium h3 + p, .clients .facts h3 + p {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: blue; }
+  .clients h3 + p, .clients .about-us h3 + p + p, .clients .about-us h4 + p, .clients .services h3 + p + p, .clients .services h4 + p, .clients .our-projects h3 + p + p, .clients .our-projects h4 + p, .clients .our-team h3 + p + p, .clients .our-team h4 + p, .clients h3 + p + p, .clients h4 + p, .clients .price h3 + p + p, .clients .price h4 + p, .clients .premium h3 + p + p, .clients .premium h4 + p, .clients .facts h3 + p + p, .clients .facts h4 + p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: red; }
+  .clients h4 {
+    font-size: 16px; }
+  .clients h4 + p {
+    text-align: center;
+    font-weight: normal;
+    color: #aeaeae;
+    font-size: 12px; }
   .clients .container {
     background-color: #f7f7f7; }
   .clients .client-profile p {
@@ -489,6 +587,35 @@ header .container {
   background-color: #ffffff; }
 
 .price .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .price .container .row {
+    margin: 0; }
+
+.price h3, .price .about-us h3 + p, .price .services h3 + p, .price .our-projects h3 + p, .price .our-team h3 + p, .price .clients h3 + p, .price h3 + p, .price h4, .price .premium h3 + p, .price .facts h3 + p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.price h3 + p, .price .about-us h3 + p + p, .price .about-us h4 + p, .price .services h3 + p + p, .price .services h4 + p, .price .our-projects h3 + p + p, .price .our-projects h4 + p, .price .our-team h3 + p + p, .price .our-team h4 + p, .price .clients h3 + p + p, .price .clients h4 + p, .price h3 + p + p, .price h4 + p, .price .premium h3 + p + p, .price .premium h4 + p, .price .facts h3 + p + p, .price .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.price h4 {
+  font-size: 16px; }
+
+.price h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
+
+.price .container {
   border-top: 1px solid #d2d2d2;
   border-bottom: 1px solid #d2d2d2;
   background-color: #f7f7f7; }
@@ -503,7 +630,9 @@ header .container {
         font-weight: 600; }
       .price .container .row .price-card h2 {
         font-family: "Poppins", sans-serif;
-        font-weight: 700; }
+        font-weight: 700;
+        color: #000000;
+        text-align: center; }
       .price .container .row .price-card ul {
         list-style-type: none;
         margin: 0;
@@ -517,6 +646,39 @@ header .container {
         border-top: 1px solid #7e7e7e;
         padding: 0;
         margin: 5px auto; }
+
+.premium .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .premium .container .row {
+    margin: 0; }
+
+.premium h3, .premium .about-us h3 + p, .premium .services h3 + p, .premium .our-projects h3 + p, .premium .our-team h3 + p, .premium .clients h3 + p, .premium .price h3 + p, .premium h3 + p, .premium h4, .premium .facts h3 + p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.premium h3 + p, .premium .about-us h3 + p + p, .premium .about-us h4 + p, .premium .services h3 + p + p, .premium .services h4 + p, .premium .our-projects h3 + p + p, .premium .our-projects h4 + p, .premium .our-team h3 + p + p, .premium .our-team h4 + p, .premium .clients h3 + p + p, .premium .clients h4 + p, .premium .price h3 + p + p, .premium .price h4 + p, .premium h3 + p + p, .premium h4 + p, .premium .facts h3 + p + p, .premium .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.premium h4 {
+  font-size: 16px; }
+
+.premium h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
+
+.premium .premium-offer h5 {
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .premium .premium-offer ul {
   list-style-type: none; }
@@ -534,3 +696,91 @@ header .container {
   /*width of image*/
   position: absolute;
   left: -5px; }
+
+.premium .premium-offer p {
+  font-size: 14px;
+  color: #7e7e7e;
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 0; }
+
+.facts .container {
+  padding: 30px 0 40px 0;
+  background-color: #f7f7f7; }
+  .facts .container .row {
+    margin: 0; }
+
+.facts h3, .facts .about-us h3 + p, .facts .services h3 + p, .facts .our-projects h3 + p, .facts .our-team h3 + p, .facts .clients h3 + p, .facts .price h3 + p, .facts .premium h3 + p, .facts h3 + p, .facts h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: blue; }
+
+.facts h3 + p, .facts .about-us h3 + p + p, .facts .about-us h4 + p, .facts .services h3 + p + p, .facts .services h4 + p, .facts .our-projects h3 + p + p, .facts .our-projects h4 + p, .facts .our-team h3 + p + p, .facts .our-team h4 + p, .facts .clients h3 + p + p, .facts .clients h4 + p, .facts .price h3 + p + p, .facts .price h4 + p, .facts .premium h3 + p + p, .facts .premium h4 + p, .facts h3 + p + p, .facts h4 + p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: red; }
+
+.facts h4 {
+  font-size: 16px; }
+
+.facts h4 + p {
+  text-align: center;
+  font-weight: normal;
+  color: #aeaeae;
+  font-size: 12px; }
+
+.facts .container {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #000000; }
+  .facts .container h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #b88b58;
+    text-align: center;
+    font-size: 42px; }
+  .facts .container hr {
+    width: 5%;
+    border-top: 2px solid #7e7e7e;
+    padding: 0;
+    margin: 5px auto; }
+
+.social .content {
+  width: 60%;
+  margin: 0 auto; }
+  .social .content p {
+    font-size: 10px;
+    margin: 0; }
+  .social .content [class*="col-"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .social .content [class*="col-"]:first-child {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2; }
+  .social .content .social {
+    background-color: #bebebe;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer; }
+    .social .content .social:hover {
+      background-color: #b88b58; }
