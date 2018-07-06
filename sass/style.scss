@@ -363,17 +363,26 @@ header {
 
 /* price */
 
-@mixin container {
-    background-color: $thirt-color;
+@mixin containerColors($color) {
+    border-top: 1px solid $container-borders;
+    border-bottom: 1px solid $container-borders;
+    background-color: $color;
+}
 
+.logotyps{
+    .container {
+        @include containerColors($second-color);
+    }
 }
 
 .price{
 .container{
+    @include containerColors($thirt-color);
     .row{
         margin: 0 auto;
-        width: 70%;
+        width: 80%;
         .price-card{
+            padding: 20px 0;
             h4{
                 font-weight: 600;
             }
@@ -388,9 +397,16 @@ header {
                 margin: 0;
                 padding: 0;
             }
+            li {
+                padding: 0;
+                margin: 0;
+                font-size: 12px;
+            }
             hr {
-                width: 20%;
+                width: 5%;
                 border-top: 1px solid $plain-text-color;
+                padding: 0;
+                margin: 5px auto;
             }
         }
 
