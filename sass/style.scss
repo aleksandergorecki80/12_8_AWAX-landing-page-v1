@@ -13,6 +13,7 @@
 section {
     .container{
         padding: 30px 0 40px 0;
+        background-color: $thirt-color;
         .row{
             margin: 0;
         }
@@ -328,6 +329,9 @@ header {
 /* happy kliends*/
 
 .clients{
+    .container {
+        background-color: $thirt-color;
+    }
     text-align: center;
     .client-profile{
         p{
@@ -357,3 +361,39 @@ header {
     }
 }
 
+/* price */
+
+@mixin container {
+    background-color: $thirt-color;
+
+}
+
+.price{
+.container{
+    .row{
+        margin: 0 auto;
+        width: 70%;
+        .price-card{
+            h4{
+                font-weight: 600;
+            }
+            h2 {
+                font-family: $numbers-font;
+                font-weight: 700;
+            }
+            text-align: center;
+            background-color: $second-color;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            hr {
+                width: 20%;
+                border-top: 1px solid $plain-text-color;
+            }
+        }
+
+    }
+}
+}

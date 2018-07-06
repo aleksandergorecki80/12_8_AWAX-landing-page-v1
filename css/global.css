@@ -1,14 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700");
-.awax-btn { background-color: #b88b58; padding: 5px 40px !important; border-radius: 30px !important; color: #ffffff; outline: none !important; }
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,800");
+.awax-btn {
+  background-color: #b88b58;
+  padding: 5px 40px !important;
+  border-radius: 30px !important;
+  color: #ffffff;
+  outline: none !important; }
 
-.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus { outline: none !important; box-shadow: none !important; }
+.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
 
-.bullets { text-align: center; }
+.bullets {
+  text-align: center; }
+  .bullets ul {
+    margin: 0;
+    padding: 0;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    .bullets ul li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      border-radius: 50%;
+      padding: 5px 5px;
+      cursor: pointer;
+      border: 1px solid #b88b58; }
+      .bullets ul li:hover {
+        background-color: #b88b58; }
 
-.bullets ul { margin: 0; padding: 0; align-self: flex-end; }
-
-.bullets ul li { display: inline-block; padding: 0; margin: 0; text-align: center; border-radius: 50%; padding: 5px 5px; cursor: pointer; border: 1px solid #b88b58; }
-
-.bullets ul li:hover { background-color: #b88b58; }
-
-.clearfix::after { content: ""; clear: both; display: table; }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
