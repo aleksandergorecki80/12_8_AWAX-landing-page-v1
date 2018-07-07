@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,800");
 .awax-btn {
+  text-align: center;
   background-color: #b88b58;
-  padding: 10px 50px !important;
+  padding: 0.6rem 2.5rem !important;
   border-radius: 30px !important;
   color: #ffffff;
   outline: none !important;
@@ -16,6 +17,10 @@
   outline: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
+
+.btn-container {
+  margin: 20px auto;
+  text-align: center; }
 
 .bullets {
   text-align: center; }

@@ -1,8 +1,9 @@
 @import 'variables';
 
 .awax-btn {
+    text-align: center;
     background-color: $brand-color;
-    padding: 10px 50px !important;
+    padding: 0.6rem 2.5rem !important;
     border-radius: 30px !important; 
     color: $second-color;
     outline: none !important; 
@@ -17,6 +18,11 @@
 .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.btn-container{
+    margin: 20px auto;
+    text-align: center;
 }
 
 .bullets{

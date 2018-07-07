@@ -162,11 +162,12 @@ header {
             background-color: $fourth-color;
             li{
                 display: inline-block;
-                padding: 20px 0px;
+                padding: 15px 0px;
                 a {
                     text-decoration: none;
-                    padding: 15px 25px;
+                    padding: 10px 15px;
                     text-transform: uppercase;
+                    font-size: 12px;
                     color: $main-color;
                     border-right: 1px solid $fifth-color;    
                     &:hover{
@@ -215,6 +216,7 @@ header {
                 transition: .3s;
                 color: white;
                 text-align: center;
+                font-size: 11px;
                 padding: 5px;
                 margin: 0;
                 }
@@ -229,7 +231,7 @@ header {
 
 /* our team  */
 .our-team{
-    @include basicSectionSettings(blue, red, $second-color);
+    @include basicSectionSettings($second-color, $subheading-color, $second-color);
     .container {
         .team-cards {
             width: 80%;
@@ -274,7 +276,7 @@ header {
 /* happy kliends*/
 
 .clients{
-    @include basicSectionSettings(blue, red, $thirt-color);
+    @include basicSectionSettings($main-color, $subheading-color, $thirt-color);
 
     text-align: center;
     .client-profile{
@@ -283,16 +285,18 @@ header {
             text-transform: none;
             color: $main-color;
             font-size: 18px;
-            margin: 0;
+            margin: 10px 0;
             &:nth-child(3){
                 font-size: 14px;
                 font-weight: 600;
+                margin-bottom: 20px;
             }
         }
         .quotation{
             display: flex;
             justify-content: center;
             .plain-text{
+                margin: 10px 0 20px 0;
                 font-size: 12px;
                 color: $plain-text-color;
                 font-weight: 200;
@@ -316,7 +320,7 @@ header {
 }
 
 .price{
-    @include basicSectionSettings(blue, red, $thirt-color);
+    @include basicSectionSettings($main-color, $subheading-color, $thirt-color);
 .container{
     @include containerColors($thirt-color);
     .row{
@@ -329,6 +333,11 @@ header {
             }
             h2 {
                 @include largeNumbers($main-color, 700);
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 12px;
+                color: $subheading-color;
             }
             text-align: center;
             background-color: $second-color;
@@ -348,6 +357,10 @@ header {
                 padding: 0;
                 margin: 5px auto;
             }
+            button {
+                margin-top: 20px;
+                width: 60%;
+            }
         }
 
     }
@@ -355,7 +368,8 @@ header {
 }
 
 .premium {
-    @include basicSectionSettings(blue, red, $thirt-color);
+    @include basicSectionSettings($main-color, $subheading-color, $second-color);
+    @include content(80%);
     .premium-offer {
         h5 {
             text-transform: uppercase;
@@ -387,18 +401,24 @@ header {
 
 
 .facts {
-    @include basicSectionSettings(blue, red, $thirt-color);
+    @include basicSectionSettings($second-color, $subheading-color, $main-color);
    .container { 
-       @include containerColors($main-color);
+        @include content(80%);
       h2 { 
           @include largeNumbers($brand-color, 700);
           font-size: 42px;
       }
       hr {
-        width: 5%;
+        width: 10%;
         border-top: 2px solid $plain-text-color;
         padding: 0;
         margin: 5px auto;
+    }
+    [class*="col-"]{
+        p {
+            display: block;
+            padding: 10px 20px;
+        }
     }
     }
 }
@@ -409,11 +429,13 @@ header {
         display: flex;
         justify-content: space-between;
         width: 60%;
-        margin: 10px auto;
+        margin: 15px auto;
 
-        p {
+        span {
             font-size: 10px;
-            margin: 0;
+            color: $plain-text-color;
+            margin: 0 0 0 5px;
+            text-transform: uppercase;
         }
         .logo-socialmedia {
             display: flex;
@@ -430,15 +452,32 @@ header {
        }
         .social {
             @include roundIcons;
-            &:hover {
-                background-color: #b88b58;
-            }
+        }
+        .fa-twitter {
+            background-color: #34c5f1;
+            @include socialIconHover(#34c5f1);
+        }
+        .fa-linkedin-in {
+            background-color: #127db5;
+            @include socialIconHover(#127db5);
+        }
+        .fa-facebook-f {
+            background-color: #36629f;
+            @include socialIconHover(#36629f);
+        }
+        .fa-google {
+            background-color: #e5443c;
+            @include socialIconHover(#e5443c);
+        }
+        .fa-pinterest-p {
+            background-color: #b21c27;
+            @include socialIconHover(#b21c27);
         }
     }
 }
 
 .contact-us {
-    @include basicSectionSettings(blue, red, $thirt-color);
+    @include basicSectionSettings($main-color, $subheading-color, $thirt-color);
     @include content(50%);
     .input-container {
         width: 49%;
@@ -448,7 +487,7 @@ header {
         float: right;
     }
     input, textarea {
-        @include inputField($plain-text-color);
+        @include inputField($thirt-color);
     }
     textarea {
         height: 100px;
@@ -506,6 +545,7 @@ header {
     }
     .social {
         @include roundIcons;
+        background-color: $plain-text-color;
         &:hover {
             background-color: #b88b58;
         }
@@ -521,7 +561,7 @@ header {
     }
     .footer-text {
         p {
-            color: $second-color;
+            color: $plain-text-color;
             font-size: 12px;
             text-align: justify;
         }

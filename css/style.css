@@ -399,11 +399,12 @@ header .container {
     background-color: #ededed; }
     .our-projects .project-menu ul li {
       display: inline-block;
-      padding: 20px 0px; }
+      padding: 15px 0px; }
       .our-projects .project-menu ul li a {
         text-decoration: none;
-        padding: 15px 25px;
+        padding: 10px 15px;
         text-transform: uppercase;
+        font-size: 12px;
         color: #000000;
         border-right: 1px solid #cfcfcf; }
         .our-projects .project-menu ul li a:hover {
@@ -458,6 +459,7 @@ header .container {
     transition: .3s;
     color: white;
     text-align: center;
+    font-size: 11px;
     padding: 5px;
     margin: 0; }
   .our-projects [class*="col-"] .overlay p:first-child {
@@ -475,14 +477,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #ffffff; }
 
 .our-team h3 + p, .our-team .about-us h3 + p + p, .our-team .about-us h4 + p, .our-team .services h3 + p + p, .our-team .services h4 + p, .our-team .our-projects h3 + p + p, .our-team .our-projects h4 + p, .our-team h3 + p + p, .our-team h4 + p, .our-team .clients h3 + p + p, .our-team .clients h4 + p, .our-team .price h3 + p + p, .our-team .price h4 + p, .our-team .premium h3 + p + p, .our-team .premium h4 + p, .our-team .facts h3 + p + p, .our-team .facts h4 + p, .our-team .contact-us h3 + p + p, .our-team .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .our-team h4 {
   font-size: 16px; }
@@ -550,13 +552,13 @@ header .container {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: blue; }
+    color: #000000; }
   .clients h3 + p, .clients .about-us h3 + p + p, .clients .about-us h4 + p, .clients .services h3 + p + p, .clients .services h4 + p, .clients .our-projects h3 + p + p, .clients .our-projects h4 + p, .clients .our-team h3 + p + p, .clients .our-team h4 + p, .clients h3 + p + p, .clients h4 + p, .clients .price h3 + p + p, .clients .price h4 + p, .clients .premium h3 + p + p, .clients .premium h4 + p, .clients .facts h3 + p + p, .clients .facts h4 + p, .clients .contact-us h3 + p + p, .clients .contact-us h4 + p {
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 30px;
     font-family: "Montserrat", sans-serif;
-    color: red; }
+    color: #aeaeae; }
   .clients h4 {
     font-size: 16px; }
   .clients h4 + p {
@@ -569,10 +571,11 @@ header .container {
     text-transform: none;
     color: #000000;
     font-size: 18px;
-    margin: 0; }
+    margin: 10px 0; }
     .clients .client-profile p:nth-child(3) {
       font-size: 14px;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 20px; }
   .clients .client-profile .quotation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -581,6 +584,7 @@ header .container {
     -ms-flex-pack: center;
     justify-content: center; }
     .clients .client-profile .quotation .plain-text {
+      margin: 10px 0 20px 0;
       font-size: 12px;
       color: #7e7e7e;
       font-weight: 200;
@@ -605,14 +609,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #000000; }
 
 .price h3 + p, .price .about-us h3 + p + p, .price .about-us h4 + p, .price .services h3 + p + p, .price .services h4 + p, .price .our-projects h3 + p + p, .price .our-projects h4 + p, .price .our-team h3 + p + p, .price .our-team h4 + p, .price .clients h3 + p + p, .price .clients h4 + p, .price h3 + p + p, .price h4 + p, .price .premium h3 + p + p, .price .premium h4 + p, .price .facts h3 + p + p, .price .facts h4 + p, .price .contact-us h3 + p + p, .price .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .price h4 {
   font-size: 16px; }
@@ -640,7 +644,11 @@ header .container {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         color: #000000;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 0; }
+      .price .container .row .price-card p {
+        font-size: 12px;
+        color: #aeaeae; }
       .price .container .row .price-card ul {
         list-style-type: none;
         margin: 0;
@@ -654,10 +662,13 @@ header .container {
         border-top: 1px solid #7e7e7e;
         padding: 0;
         margin: 5px auto; }
+      .price .container .row .price-card button {
+        margin-top: 20px;
+        width: 60%; }
 
 .premium .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #ffffff; }
   .premium .container .row {
     margin: 0; }
 
@@ -666,14 +677,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #000000; }
 
 .premium h3 + p, .premium .about-us h3 + p + p, .premium .about-us h4 + p, .premium .services h3 + p + p, .premium .services h4 + p, .premium .our-projects h3 + p + p, .premium .our-projects h4 + p, .premium .our-team h3 + p + p, .premium .our-team h4 + p, .premium .clients h3 + p + p, .premium .clients h4 + p, .premium .price h3 + p + p, .premium .price h4 + p, .premium h3 + p + p, .premium h4 + p, .premium .facts h3 + p + p, .premium .facts h4 + p, .premium .contact-us h3 + p + p, .premium .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .premium h4 {
   font-size: 16px; }
@@ -683,6 +694,10 @@ header .container {
   font-weight: normal;
   color: #aeaeae;
   font-size: 12px; }
+
+.premium .content {
+  width: 80%;
+  margin: 0 auto; }
 
 .premium .premium-offer h5 {
   text-transform: uppercase;
@@ -714,7 +729,7 @@ header .container {
 
 .facts .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #000000; }
   .facts .container .row {
     margin: 0; }
 
@@ -723,14 +738,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #ffffff; }
 
 .facts h3 + p, .facts .about-us h3 + p + p, .facts .about-us h4 + p, .facts .services h3 + p + p, .facts .services h4 + p, .facts .our-projects h3 + p + p, .facts .our-projects h4 + p, .facts .our-team h3 + p + p, .facts .our-team h4 + p, .facts .clients h3 + p + p, .facts .clients h4 + p, .facts .price h3 + p + p, .facts .price h4 + p, .facts .premium h3 + p + p, .facts .premium h4 + p, .facts h3 + p + p, .facts h4 + p, .facts .contact-us h3 + p + p, .facts .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .facts h4 {
   font-size: 16px; }
@@ -741,21 +756,26 @@ header .container {
   color: #aeaeae;
   font-size: 12px; }
 
-.facts .container {
-  border-top: 1px solid #d2d2d2;
-  border-bottom: 1px solid #d2d2d2;
-  background-color: #000000; }
-  .facts .container h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    color: #b88b58;
-    text-align: center;
-    font-size: 42px; }
-  .facts .container hr {
-    width: 5%;
-    border-top: 2px solid #7e7e7e;
-    padding: 0;
-    margin: 5px auto; }
+.facts .container .content {
+  width: 80%;
+  margin: 0 auto; }
+
+.facts .container h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #b88b58;
+  text-align: center;
+  font-size: 42px; }
+
+.facts .container hr {
+  width: 10%;
+  border-top: 2px solid #7e7e7e;
+  padding: 0;
+  margin: 5px auto; }
+
+.facts .container [class*="col-"] p {
+  display: block;
+  padding: 10px 20px; }
 
 .social .content {
   display: -webkit-box;
@@ -765,10 +785,12 @@ header .container {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 60%;
-  margin: 10px auto; }
-  .social .content p {
+  margin: 15px auto; }
+  .social .content span {
     font-size: 10px;
-    margin: 0; }
+    color: #7e7e7e;
+    margin: 0 0 0 5px;
+    text-transform: uppercase; }
   .social .content .logo-socialmedia {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -799,8 +821,26 @@ header .container {
     width: 27px;
     height: 27px;
     cursor: pointer; }
-    .social .content .social:hover {
-      background-color: #b88b58; }
+  .social .content .fa-twitter {
+    background-color: #34c5f1; }
+    .social .content .fa-twitter:hover {
+      background-color: #0e9fcb; }
+  .social .content .fa-linkedin-in {
+    background-color: #127db5; }
+    .social .content .fa-linkedin-in:hover {
+      background-color: #0b4d6f; }
+  .social .content .fa-facebook-f {
+    background-color: #36629f; }
+    .social .content .fa-facebook-f:hover {
+      background-color: #233f66; }
+  .social .content .fa-google {
+    background-color: #e5443c; }
+    .social .content .fa-google:hover {
+      background-color: #bc2119; }
+  .social .content .fa-pinterest-p {
+    background-color: #b21c27; }
+    .social .content .fa-pinterest-p:hover {
+      background-color: #701219; }
 
 .contact-us .container {
   padding: 30px 0 40px 0;
@@ -813,14 +853,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #000000; }
 
 .contact-us h3 + p, .contact-us .about-us h3 + p + p, .contact-us .about-us h4 + p, .contact-us .services h3 + p + p, .contact-us .services h4 + p, .contact-us .our-projects h3 + p + p, .contact-us .our-projects h4 + p, .contact-us .our-team h3 + p + p, .contact-us .our-team h4 + p, .contact-us .clients h3 + p + p, .contact-us .clients h4 + p, .contact-us .price h3 + p + p, .contact-us .price h4 + p, .contact-us .premium h3 + p + p, .contact-us .premium h4 + p, .contact-us .facts h3 + p + p, .contact-us .facts h4 + p, .contact-us h3 + p + p, .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .contact-us h4 {
   font-size: 16px; }
@@ -843,7 +883,7 @@ header .container {
   float: right; }
 
 .contact-us input, .contact-us textarea {
-  background-color: #7e7e7e;
+  background-color: #f7f7f7;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -926,7 +966,8 @@ header .container {
   padding: 5px;
   width: 27px;
   height: 27px;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #7e7e7e; }
   .footer .social:hover {
     background-color: #b88b58; }
 
@@ -950,7 +991,7 @@ header .container {
   justify-content: space-around; }
 
 .footer .footer-text p {
-  color: #ffffff;
+  color: #7e7e7e;
   font-size: 12px;
   text-align: justify; }
 

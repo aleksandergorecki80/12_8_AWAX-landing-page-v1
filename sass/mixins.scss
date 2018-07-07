@@ -79,3 +79,9 @@
     padding: 10px 0;
     margin-bottom: 10px;
 }
+
+@mixin socialIconHover($color) {
+    &:hover {
+        background-color: darken($color, 15);
+    }
+}
