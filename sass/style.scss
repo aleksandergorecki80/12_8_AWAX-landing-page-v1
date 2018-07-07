@@ -5,11 +5,8 @@
 
 *{
     box-sizing: border-box;
-   border: 1px solid red;   
+/*   border: 1px solid red;   */
 }
-
-
-
 
 
 header {
@@ -98,9 +95,8 @@ header {
 }
 
 .about-us {
-    @include basicSectionSettings(red, $subheading-color);
+    @include basicSectionSettings($main-color, $subheading-color, $second-color);
     .container {
-        background-color: $thirt-color;
         img {
             width: 100%;
             object-fit: cover;
@@ -109,14 +105,27 @@ header {
         h3+p {
             color: $subheading-color;
         }
-
+        .icon-container {
+            position: relative;
+            .telephone-icon {
+                background-color: $brand-color;
+                box-shadow: none;
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                padding: 5px;
+                position: absolute;
+                top: -50px;
+                left: 1000px;
+            }
+        }
     }
+
 }
 
 .services {
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings($second-color, $subheading-color, $main-color);
     .container {
-        background-color: $main-color;
         color: $second-color;
         [class*="col-"] {
             display: flex;
@@ -140,11 +149,7 @@ header {
 }
 
 .our-projects{
-    @include basicSectionSettings(blue, red);
-    .container {
-        background-color: $thirt-color;
-
-    }
+    @include basicSectionSettings($main-color, $subheading-color, $second-color);
 
     .project-menu{
         display: flex;
@@ -157,10 +162,7 @@ header {
             background-color: $fourth-color;
             li{
                 display: inline-block;
-                
-                
                 padding: 20px 0px;
-                
                 a {
                     text-decoration: none;
                     padding: 15px 25px;
@@ -184,12 +186,10 @@ header {
     }
 
     [class*="col-"] {
-        
         img {
             object-fit: cover;
             width: 100%;
         }
-
         .div-for-foto{
             position: relative;
         }
@@ -197,11 +197,9 @@ header {
             width: 100%;
             height: 100%; 
      }
-
         .div-for-foto:hover  p {
             display: inline;
         }
-
         .overlay {
             position: absolute;
             background-color: rgba(0, 0, 0, 0.8);
@@ -231,7 +229,7 @@ header {
 
 /* our team  */
 .our-team{
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings(blue, red, $second-color);
     .container {
         .team-cards {
             width: 80%;
@@ -276,10 +274,8 @@ header {
 /* happy kliends*/
 
 .clients{
-    @include basicSectionSettings(blue, red);
-    .container {
-        background-color: $thirt-color;
-    }
+    @include basicSectionSettings(blue, red, $thirt-color);
+
     text-align: center;
     .client-profile{
         p{
@@ -320,7 +316,7 @@ header {
 }
 
 .price{
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings(blue, red, $thirt-color);
 .container{
     @include containerColors($thirt-color);
     .row{
@@ -359,7 +355,7 @@ header {
 }
 
 .premium {
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings(blue, red, $thirt-color);
     .premium-offer {
         h5 {
             text-transform: uppercase;
@@ -391,7 +387,7 @@ header {
 
 
 .facts {
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings(blue, red, $thirt-color);
    .container { 
        @include containerColors($main-color);
       h2 { 
@@ -442,7 +438,7 @@ header {
 }
 
 .contact-us {
-    @include basicSectionSettings(blue, red);
+    @include basicSectionSettings(blue, red, $thirt-color);
     @include content(50%);
     .input-container {
         width: 49%;
@@ -452,14 +448,7 @@ header {
         float: right;
     }
     input, textarea {
-        background-color: $thirt-color;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-bottom: 2px solid $plain-text-color;
-        width: 100%;
-        padding: 10px 0;
-        margin-bottom: 10px;
+        @include inputField($plain-text-color);
     }
     textarea {
         height: 100px;
@@ -503,12 +492,18 @@ header {
 }
 
 .footer {
+    .container {
+        @include containerColors($main-color);
+    }
+    @include content(80%);
     .content {
         display: flex;
         flex-direction: row;
+        padding: 20px 0;
     }
-    @include content(80%);
-
+    .awax {
+        color: $second-color
+    }
     .social {
         @include roundIcons;
         &:hover {
@@ -523,5 +518,27 @@ header {
     .social-media {
         display: flex;
         justify-content: space-around;
+    }
+    .footer-text {
+        p {
+            color: $second-color;
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+    .footer-form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $bg-form-color;
+        input {
+            @include inputField($bg-form-color);
+            text-align: center;
+            color: $second-color;
+        }
+    }
+    button {
+        width: 100%;
     }
 }

@@ -2,15 +2,21 @@
 
 .awax-btn {
     background-color: $brand-color;
-    padding: 5px 40px !important;
+    padding: 10px 50px !important;
     border-radius: 30px !important; 
     color: $second-color;
     outline: none !important; 
+    text-transform: uppercase;
+    font-size: 11px !important; 
+    font-weight: 700 !important;
+    &:hover {
+        background-color: darken($brand-color, 15);
+    }
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
-      outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .bullets{

@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,800");
 .awax-btn {
   background-color: #b88b58;
-  padding: 5px 40px !important;
+  padding: 10px 50px !important;
   border-radius: 30px !important;
   color: #ffffff;
-  outline: none !important; }
+  outline: none !important;
+  text-transform: uppercase;
+  font-size: 11px !important;
+  font-weight: 700 !important; }
+  .awax-btn:hover {
+    background-color: #89643a; }
 
 .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
   outline: none !important;

@@ -158,7 +158,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red; }
+  /*   border: 1px solid red;   */ }
 
 header .container {
   background-color: #000000;
@@ -251,7 +251,7 @@ header .container {
 
 .about-us .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #ffffff; }
   .about-us .container .row {
     margin: 0; }
 
@@ -260,7 +260,7 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: red; }
+  color: #000000; }
 
 .about-us h3 + p, .about-us h3 + p + p, .about-us h4 + p, .about-us .services h3 + p + p, .about-us .services h4 + p, .about-us .our-projects h3 + p + p, .about-us .our-projects h4 + p, .about-us .our-team h3 + p + p, .about-us .our-team h4 + p, .about-us .clients h3 + p + p, .about-us .clients h4 + p, .about-us .price h3 + p + p, .about-us .price h4 + p, .about-us .premium h3 + p + p, .about-us .premium h4 + p, .about-us .facts h3 + p + p, .about-us .facts h4 + p, .about-us .contact-us h3 + p + p, .about-us .contact-us h4 + p {
   font-size: 12px;
@@ -278,20 +278,33 @@ header .container {
   color: #aeaeae;
   font-size: 12px; }
 
-.about-us .container {
-  background-color: #f7f7f7; }
-  .about-us .container img {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -webkit-box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5); }
-  .about-us .container h3 + p, .about-us .container h3 + p + p, .about-us .container h4 + p, .about-us .container .services h3 + p + p, .about-us .container .services h4 + p, .about-us .container .our-projects h3 + p + p, .about-us .container .our-projects h4 + p, .about-us .container .our-team h3 + p + p, .about-us .container .our-team h4 + p, .about-us .container .clients h3 + p + p, .about-us .container .clients h4 + p, .about-us .container .price h3 + p + p, .about-us .container .price h4 + p, .about-us .container .premium h3 + p + p, .about-us .container .premium h4 + p, .about-us .container .facts h3 + p + p, .about-us .container .facts h4 + p, .about-us .container .contact-us h3 + p + p, .about-us .container .contact-us h4 + p {
-    color: #aeaeae; }
+.about-us .container img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.5); }
+
+.about-us .container h3 + p, .about-us .container h3 + p + p, .about-us .container h4 + p, .about-us .container .services h3 + p + p, .about-us .container .services h4 + p, .about-us .container .our-projects h3 + p + p, .about-us .container .our-projects h4 + p, .about-us .container .our-team h3 + p + p, .about-us .container .our-team h4 + p, .about-us .container .clients h3 + p + p, .about-us .container .clients h4 + p, .about-us .container .price h3 + p + p, .about-us .container .price h4 + p, .about-us .container .premium h3 + p + p, .about-us .container .premium h4 + p, .about-us .container .facts h3 + p + p, .about-us .container .facts h4 + p, .about-us .container .contact-us h3 + p + p, .about-us .container .contact-us h4 + p {
+  color: #aeaeae; }
+
+.about-us .container .icon-container {
+  position: relative; }
+  .about-us .container .icon-container .telephone-icon {
+    background-color: #b88b58;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    position: absolute;
+    top: -50px;
+    left: 1000px; }
 
 .services .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #000000; }
   .services .container .row {
     margin: 0; }
 
@@ -300,14 +313,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #ffffff; }
 
 .services h3 + p, .services .about-us h3 + p + p, .services .about-us h4 + p, .services h3 + p + p, .services h4 + p, .services .our-projects h3 + p + p, .services .our-projects h4 + p, .services .our-team h3 + p + p, .services .our-team h4 + p, .services .clients h3 + p + p, .services .clients h4 + p, .services .price h3 + p + p, .services .price h4 + p, .services .premium h3 + p + p, .services .premium h4 + p, .services .facts h3 + p + p, .services .facts h4 + p, .services .contact-us h3 + p + p, .services .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .services h4 {
   font-size: 16px; }
@@ -319,7 +332,6 @@ header .container {
   font-size: 12px; }
 
 .services .container {
-  background-color: #000000;
   color: #ffffff; }
   .services .container [class*="col-"] {
     display: -webkit-box;
@@ -345,7 +357,7 @@ header .container {
 
 .our-projects .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #ffffff; }
   .our-projects .container .row {
     margin: 0; }
 
@@ -354,14 +366,14 @@ header .container {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: blue; }
+  color: #000000; }
 
 .our-projects h3 + p, .our-projects .about-us h3 + p + p, .our-projects .about-us h4 + p, .our-projects .services h3 + p + p, .our-projects .services h4 + p, .our-projects h3 + p + p, .our-projects h4 + p, .our-projects .our-team h3 + p + p, .our-projects .our-team h4 + p, .our-projects .clients h3 + p + p, .our-projects .clients h4 + p, .our-projects .price h3 + p + p, .our-projects .price h4 + p, .our-projects .premium h3 + p + p, .our-projects .premium h4 + p, .our-projects .facts h3 + p + p, .our-projects .facts h4 + p, .our-projects .contact-us h3 + p + p, .our-projects .contact-us h4 + p {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  color: red; }
+  color: #aeaeae; }
 
 .our-projects h4 {
   font-size: 16px; }
@@ -371,9 +383,6 @@ header .container {
   font-weight: normal;
   color: #aeaeae;
   font-size: 12px; }
-
-.our-projects .container {
-  background-color: #f7f7f7; }
 
 .our-projects .project-menu {
   display: -webkit-box;
@@ -457,7 +466,7 @@ header .container {
 /* our team  */
 .our-team .container {
   padding: 30px 0 40px 0;
-  background-color: #f7f7f7; }
+  background-color: #ffffff; }
   .our-team .container .row {
     margin: 0; }
 
@@ -555,8 +564,6 @@ header .container {
     font-weight: normal;
     color: #aeaeae;
     font-size: 12px; }
-  .clients .container {
-    background-color: #f7f7f7; }
   .clients .client-profile p {
     font-weight: 700;
     text-transform: none;
@@ -836,7 +843,7 @@ header .container {
   float: right; }
 
 .contact-us input, .contact-us textarea {
-  background-color: #f7f7f7;
+  background-color: #7e7e7e;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -889,6 +896,15 @@ header .container {
     .contact-details .content [class*="col-"] span {
       margin-left: 5px; }
 
+.footer .container {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #000000; }
+
+.footer .content {
+  width: 80%;
+  margin: 0 auto; }
+
 .footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -896,11 +912,11 @@ header .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 20px 0; }
 
-.footer .content {
-  width: 80%;
-  margin: 0 auto; }
+.footer .awax {
+  color: #ffffff; }
 
 .footer .social {
   background-color: #bebebe;
@@ -932,3 +948,38 @@ header .container {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+
+.footer .footer-text p {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: justify; }
+
+.footer .footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #373737; }
+  .footer .footer-form input {
+    background-color: #373737;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #7e7e7e;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff; }
+
+.footer button {
+  width: 100%; }
