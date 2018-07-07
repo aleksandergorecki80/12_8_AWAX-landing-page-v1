@@ -57,3 +57,14 @@
         margin: 0 auto;
     }
 }
+
+@mixin roundIcons {
+    background-color: #bebebe;
+    border-radius: 50%;
+    color: $second-color;
+    font-size: 16px;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}

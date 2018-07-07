@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-/*   border: 1px solid red;   */
+   border: 1px solid red;   
 }
 
 
@@ -257,14 +257,7 @@ header {
             margin-top: 20px;
         }
         .social {
-            background-color: #bebebe;
-            border-radius: 50%;
-            color: $second-color;
-            font-size: 16px;
-            padding: 5px;
-            width: 27px;
-            height: 27px;
-            cursor: pointer;
+            @include roundIcons;
             &:hover {
                 background-color: #b88b58;
             }
@@ -440,14 +433,7 @@ header {
            }
        }
         .social {
-            background-color: #bebebe;
-            border-radius: 50%;
-            color: $second-color;
-            font-size: 16px;
-            padding: 5px;
-            width: 27px;
-            height: 27px;
-            cursor: pointer;
+            @include roundIcons;
             &:hover {
                 background-color: #b88b58;
             }
@@ -478,5 +464,64 @@ header {
     textarea {
         height: 100px;
         resize: none;
+    }
+}
+
+.contact-details{
+    .container{
+        background-image: url('../images/map-bg.jpg');
+        background-size: cover;
+    }
+    @include content(80%);
+    .content {
+        padding: 30px;
+        [class*="col-"] {
+            background-color: $second-color;
+            padding: 30px;
+            div {
+                display: flex;
+                font-size: 12px;
+                align-items: center;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;               
+            }
+            li {
+                margin: 10px 0;
+            }
+            .contact-icon {
+                @include roundIcons;
+                cursor: auto;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.footer {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    @include content(80%);
+
+    .social {
+        @include roundIcons;
+        &:hover {
+            background-color: #b88b58;
+        }
+    }
+    .footer-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .social-media {
+        display: flex;
+        justify-content: space-around;
     }
 }

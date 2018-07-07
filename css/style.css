@@ -158,7 +158,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*   border: 1px solid red;   */ }
+  border: 1px solid red; }
 
 header .container {
   background-color: #000000;
@@ -848,3 +848,87 @@ header .container {
 .contact-us textarea {
   height: 100px;
   resize: none; }
+
+.contact-details .container {
+  background-image: url("../images/map-bg.jpg");
+  background-size: cover; }
+
+.contact-details .content {
+  width: 80%;
+  margin: 0 auto; }
+
+.contact-details .content {
+  padding: 30px; }
+  .contact-details .content [class*="col-"] {
+    background-color: #ffffff;
+    padding: 30px; }
+    .contact-details .content [class*="col-"] div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 12px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .contact-details .content [class*="col-"] ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+    .contact-details .content [class*="col-"] li {
+      margin: 10px 0; }
+    .contact-details .content [class*="col-"] .contact-icon {
+      background-color: #bebebe;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 5px;
+      width: 27px;
+      height: 27px;
+      cursor: pointer;
+      cursor: auto; }
+    .contact-details .content [class*="col-"] span {
+      margin-left: 5px; }
+
+.footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.footer .content {
+  width: 80%;
+  margin: 0 auto; }
+
+.footer .social {
+  background-color: #bebebe;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer; }
+  .footer .social:hover {
+    background-color: #b88b58; }
+
+.footer .footer-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
