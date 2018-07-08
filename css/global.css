@@ -51,7 +51,8 @@ body {
   position: sticky;
   top: 90vh;
   margin-left: -10px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 100; }
   .go-up-container .go-up {
     background-color: #b88b58;
     -webkit-box-shadow: none;

@@ -60,6 +60,7 @@ body {
     top: 90vh;
     margin-left: -10px;
     cursor: pointer;
+    z-index: 100;
     .go-up {
         background-color: $brand-color;
         box-shadow: none;
