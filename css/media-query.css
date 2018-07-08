@@ -215,9 +215,6 @@
 @media screen and (max-width: 767px) {
   header .container {
     display: block; }
-    header .container .menu-icon {
-      float: right;
-      display: block; }
     header .container nav {
       display: none; }
       header .container nav ul {
@@ -235,10 +232,16 @@
       font-size: 24px;
       display: block;
       font-size: 24px;
-      color: white; }
-      header .container .menu-icon button {
+      color: white;
+      float: right;
+      display: block;
+      padding: 5px; }
+      header .container .menu-icon #menuIcon {
         background-color: #000000;
-        color: #ffffff; }
+        color: #ffffff;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        cursor: pointer; }
   .hero .container h1, .hero .container h2, .hero .container h3 {
     font-size: 28px; }
   .hero .container h3 {
@@ -248,11 +251,17 @@
     margin: 0 auto; }
   .services .container [class*="col-"] {
     border-top: 1px solid #aeaeae; }
+  .services .container [class*="col-"]:first-child {
+    border: none; }
   .services .container [class*="col-"] {
     padding-top: 10px;
     height: 250px; }
   .about-us .icon-container {
     display: none; }
+  .about-us p {
+    text-align: justify; }
+  .about-us h3 + p {
+    margin-bottom: 0; }
   .our-projects #menuProjects {
     display: none; }
   .our-projects #projectsMenuIcon {
@@ -271,7 +280,7 @@
         padding: 0 5px;
         position: relative;
         z-index: 100;
-        background-color: rgba(237, 237, 237, 0.5); }
+        background-color: rgba(237, 237, 237, 0.7); }
         .our-projects .container .content .project-menu ul li {
           display: block; }
           .our-projects .container .content .project-menu ul li a {
@@ -280,6 +289,8 @@
       margin-top: 0; }
       .our-projects .container .content .projects-gallery img {
         height: 200px; }
+      .our-projects .container .content .projects-gallery [class*="col-"] {
+        padding: 10px 0; }
     .our-projects .container .content [class*="col-"] .overlay {
       height: 70px;
       top: 130px; }
@@ -290,6 +301,12 @@
   .our-team .container {
     background-image: url("../images/our-team-bg-small.jpg");
     background-size: auto; }
+  .clients .container .client-profile .plain-text {
+    width: 90%; }
+  .logotyps .col-s-6 {
+    text-align: center; }
+  .facts .container .content h2 {
+    margin: 5px; }
   .social .container .content {
     width: 90%; }
     .social .container .content .logo-socialmedia {
@@ -307,12 +324,9 @@
       width: 100%; }
       .contact-details .container .content [class*="col-"]:nth-child(2) {
         display: block;
-        margin: 0;
-        padding: 0;
-        background-image: url("../images/map-s.jpg");
-        background-size: cover;
-        width: 100%;
-        height: 150px; }
+        padding: 0; }
+        .contact-details .container .content [class*="col-"]:nth-child(2) img {
+          width: 100%; }
   .footer .container .content {
     width: 100%;
     -webkit-box-orient: vertical;

@@ -6,10 +6,6 @@
     header {
     .container{
         display: block;
-        .menu-icon {
-            float: right;
-            display: block;
-        }
         nav {
             display: none;
             ul {
@@ -34,10 +30,15 @@
             display: block;
             font-size: 24px;
             color: white;
-           
-            button {
+            float: right;
+            display: block;
+            padding: 5px;
+            #menuIcon {
                 background-color: $main-color;
                 color: $second-color;
+                padding: 10px;
+                border: 1px solid $second-color;
+                cursor: pointer;
             }
         }
     }
@@ -72,6 +73,9 @@
             [class*="col-"] {
                 border-top: 1px solid $subheading-color;
             }
+            [class*="col-"]:first-child {
+                border: none;
+            }
             [class*="col-"]{                
                 padding-top: 10px;
                 height: 250px;
@@ -81,6 +85,12 @@
     .about-us {
         .icon-container{
             display: none;
+        }
+        p {
+            text-align: justify;
+        }
+        h3+p {
+            margin-bottom: 0;
         }
     }
 
@@ -108,7 +118,7 @@
                         padding: 0 5px;
                         position: relative;
                         z-index: 100;
-                        background-color: rgba(237, 237, 237, 0.5);
+                        background-color: rgba(237, 237, 237, 0.7);
                         li {
                             display: block;
                             a {
@@ -121,6 +131,9 @@
                     margin-top: 0;
                     img {
                         height: 200px;
+                    }
+                    [class*="col-"] {
+                        padding: 10px 0;
                     }
                 }
                 [class*="col-"] .overlay {
@@ -142,6 +155,33 @@
             background-size: auto;
         }
     }
+
+    .clients {
+        .container {
+                .client-profile {
+                    .plain-text {
+                        width: 90%;
+                    }
+                }
+        }
+    }
+
+    .logotyps {
+        .col-s-6 {
+            text-align: center;
+        }
+    }
+
+    .facts{
+        .container {
+            .content {
+                h2 {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
     .social {
         .container {
             .content{
@@ -170,14 +210,13 @@
             .content {
                 padding: 0;
                 width: 100%;
+
                 [class*="col-"]:nth-child(2){
                     display: block;
-                    margin: 0;
                     padding: 0;
-                    background-image: url('../images/map-s.jpg');
-                    background-size: cover;
-                    width: 100%;
-                    height: 150px;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }

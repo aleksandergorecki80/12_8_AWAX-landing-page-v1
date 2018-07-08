@@ -1022,32 +1022,6 @@ header .container {
   .contact-details .content [class*="col-"]:nth-child(2) {
     display: none; }
 
-.footer .go-up-container {
-  position: relative; }
-  .footer .go-up-container .go-up {
-    background-color: #b88b58;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
-    padding: 5px;
-    position: absolute;
-    top: -23px;
-    left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .footer .go-up-container .go-up .fa-chevron-up {
-      font-size: 24px;
-      color: #ffffff; }
-
 .footer .container {
   border-top: 1px solid #d2d2d2;
   border-bottom: 1px solid #d2d2d2;

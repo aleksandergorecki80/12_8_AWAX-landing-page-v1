@@ -55,6 +55,31 @@ body {
     }
 }
 
+.go-up-container {
+    position: sticky;
+    top: 90vh;
+    margin-left: -10px;
+    cursor: pointer;
+    .go-up {
+        background-color: $brand-color;
+        box-shadow: none;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        padding: 5px;
+        position: absolute;
+        top: -23px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-chevron-up {
+            font-size: 24px;
+            color: $second-color;
+        }
+    }
+}
+
 .clearfix::after {
     content: "";
     clear: both;
