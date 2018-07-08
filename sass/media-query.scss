@@ -72,6 +72,9 @@
             @include content(100%);
             [class*="col-"] {
                 border-top: 1px solid $subheading-color;
+                border-bottom: none;
+                border-left: none;
+                border-right: none;
             }
             [class*="col-"]:first-child {
                 border: none;

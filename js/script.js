@@ -49,14 +49,10 @@ $(function(){
     });
         }
     });
-/*
-function showRulesSection() {
-    
-    if (ruleSection.style.display == "block") {
-        ruleSection.style.display = "none";
-    } else {
-        ruleSection.style.display = "block";
-    }
-}
-*/
+
+
+$('.go-up').on("click", function(){
+      $(window).scrollTop(0);
+});
+
 });
