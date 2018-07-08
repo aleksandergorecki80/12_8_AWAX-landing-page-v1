@@ -141,6 +141,7 @@
                     margin-top: 0;
                     img {
                         height: 200px;
+                        z-index: -200;
                     }
                     [class*="col-"] {
                         padding: 10px 0;
@@ -150,6 +151,7 @@
                 [class*="col-"] .overlay {
                     height: 70px;
                     top: 130px;
+                    z-index: -100;
                     p {
                         display: block;
                         margin: 0;

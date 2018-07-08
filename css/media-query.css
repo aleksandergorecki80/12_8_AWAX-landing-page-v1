@@ -299,12 +299,14 @@
     .our-projects .container .content .projects-gallery {
       margin-top: 0; }
       .our-projects .container .content .projects-gallery img {
-        height: 200px; }
+        height: 200px;
+        z-index: -200; }
       .our-projects .container .content .projects-gallery [class*="col-"] {
         padding: 10px 0; }
     .our-projects .container .content [class*="col-"] .overlay {
       height: 70px;
-      top: 130px; }
+      top: 130px;
+      z-index: -100; }
       .our-projects .container .content [class*="col-"] .overlay p {
         display: block;
         margin: 0;
