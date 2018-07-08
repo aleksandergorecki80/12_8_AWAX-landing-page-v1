@@ -51,8 +51,9 @@ $(function(){
     });
 
 
-$('.go-up').on("click", function(){
-      $(window).scrollTop(0);
+$('.go-up').on("click",function(){
+          $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
 });
 
 });
