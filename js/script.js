@@ -23,30 +23,27 @@ $(function(){
 
     var $projectsMenu = $('#menuProjects');
     var $projectsMenuIcon = $('#projectsMenuIcon');
-    var $arrow = $('.fa-angle-right');
+    var $arrow = $('.fa-angle-down');
     $projectsMenuIcon.click(function(){
         if ($projectsMenu.css('display') == 'none'){
             $projectsMenu.css('display', 'block'); 
            $arrow.css({
-  '-webkit-transform' : 'rotate(90deg)',
-     '-moz-transform' : 'rotate(90deg)',  
-      '-ms-transform' : 'rotate(90deg)',  
-       '-o-transform' : 'rotate(90deg)',  
-          'transform' : 'rotate(90deg)',  
-               'zoom' : 1
-
-    });
+                    '-webkit-transform' : 'rotate(180deg)',
+                    '-moz-transform' : 'rotate(180deg)',  
+                    '-ms-transform' : 'rotate(180deg)',  
+                    '-o-transform' : 'rotate(180deg)',  
+                    'transform' : 'rotate(180deg)',  
+                     });
        } 
            else {
             $projectsMenu.css('display', 'none'); 
             $arrow.css({
-  '-webkit-transform' : 'rotate(0deg)',
-     '-moz-transform' : 'rotate(0deg)',  
-      '-ms-transform' : 'rotate(0deg)',  
-       '-o-transform' : 'rotate(0deg)',  
-          'transform' : 'rotate(0deg)',  
-               'zoom' : 1
-    });
+                    '-webkit-transform' : 'rotate(0deg)',
+                    '-moz-transform' : 'rotate(0deg)',  
+                    '-ms-transform' : 'rotate(0deg)',  
+                    '-o-transform' : 'rotate(0deg)',  
+                    'transform' : 'rotate(0deg)',  
+                    });
         }
     });
 
