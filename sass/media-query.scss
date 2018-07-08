@@ -1,18 +1,11 @@
 @import 'variables';
 @import '_grid';
+@import 'mixins';
 
-@media screen and (min-width: 768px ) and (max-width: 1200px)  {
-
-}
-
-@media  screen and (max-width: 768px ) {
+@media  screen and (max-width: 767px ) {
     header {
     .container{
         display: block;
-        
-       .logo {
-            //float: left;
-        }
         .menu-icon {
             float: right;
             display: block;
@@ -44,7 +37,8 @@
            // border: 1px solid white;
             background-color: $brand-color;
             button {
-                background-color: $main-color
+                background-color: $main-color;
+                color: $second-color;
             }
         }
     }
@@ -77,17 +71,50 @@
 
     .services {
         .container{
-            [class*="col-"]:nth-child(1), 
-            [class*="col-"]:nth-child(2) {
-                border-bottom: 1px solid $subheading-color;
+            @include content(100%);
+            [class*="col-"] {
+                border-top: 1px solid $subheading-color;
             }
             [class*="col-"]{                
                 padding-top: 10px;
-                height: 200px;
+                height: 250px;
             }
+        }
+    }
+    .about-us {
+        .icon-container{
+            display: none;
+        }
+    }
+    .our-team{
+        .container {
+            background-image: url('../images/our-team-bg-small.jpg');
+            background-size: auto;
         }
     }
 
 
 
 } /*end of media*/
+
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+    .services {
+        .container{
+            @include content(100%);
+            [class*="col-"]:nth-child(1), 
+            [class*="col-"]:nth-child(2) {
+                border-bottom: 1px solid $subheading-color;
+            }
+            [class*="col-"]{                
+                padding-top: 10px;
+                height: 250px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+

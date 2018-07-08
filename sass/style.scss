@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-/*   border: 1px solid red;   */
+   border: 1px solid red;   
 }
 
 
@@ -102,20 +102,17 @@ header {
             object-fit: cover;
             box-shadow: 3px 2px 10px 0px rgba(0,0,0,0.5);
         }
-        h3+p {
-            color: $subheading-color;
-        }
         .icon-container {
             position: relative;
             .telephone-icon {
                 background-color: $brand-color;
                 box-shadow: none;
                 border-radius: 50%;
-                width: 45px;
-                height: 45px;
+                width: 46px;
+                height: 46px;
                 padding: 5px;
                 position: absolute;
-                top: -50px;
+                top: -53px;
                 left: 1000px;
             }
         }
@@ -125,6 +122,7 @@ header {
 
 .services {
     @include basicSectionSettings($second-color, $subheading-color, $main-color);
+    @include content(80%);
     .container {
         color: $second-color;
         [class*="col-"] {
@@ -133,8 +131,8 @@ header {
             justify-content: center;
             flex-direction: column;
             border-left: 1px solid $subheading-color;
-            height: 170px;
             padding: 20px;
+            min-height: 250px;
         }
         [class*="col-"]:last-child {
             border-right: 1px solid $subheading-color;
@@ -150,7 +148,7 @@ header {
 
 .our-projects{
     @include basicSectionSettings($main-color, $subheading-color, $second-color);
-
+    @include content(80%);
     .project-menu{
         display: flex;
         justify-content: center;
@@ -182,7 +180,6 @@ header {
     }
     
     .projects-gallery{
-        max-width: 70%;
         margin: 20px auto;
     }
 
@@ -217,7 +214,7 @@ header {
                 color: white;
                 text-align: center;
                 font-size: 11px;
-                padding: 5px;
+                padding: 15px;
                 margin: 0;
                 }
             p:first-child {
@@ -238,6 +235,8 @@ header {
             margin: 0 auto;
         }
         background-image: url('../images/our-team-bg.jpg');
+        
+        background-size: auto;
 
        [class*="col-"] {
            div {
@@ -430,7 +429,7 @@ header {
         justify-content: space-between;
         width: 60%;
         margin: 15px auto;
-
+        flex-wrap: wrap;
         span {
             font-size: 10px;
             color: $plain-text-color;
@@ -531,6 +530,27 @@ header {
 }
 
 .footer {
+    .go-up-container {
+        position: relative;
+        .go-up {
+            background-color: $brand-color;
+            box-shadow: none;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            padding: 5px;
+            position: absolute;
+            top: -23px;
+            left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-chevron-up {
+                font-size: 24px;
+                color: $second-color;
+            }
+        }
+    }
     .container {
         @include containerColors($main-color);
     }

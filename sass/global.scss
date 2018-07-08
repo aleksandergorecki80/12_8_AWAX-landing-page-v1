@@ -1,5 +1,14 @@
 @import 'variables';
 
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .awax-btn {
     text-align: center;
     background-color: $brand-color;

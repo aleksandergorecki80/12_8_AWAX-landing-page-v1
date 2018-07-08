@@ -106,8 +106,7 @@
 .col-offset-right-11 {
   margin-right: 91.66%; }
 
-.row::before,
-.row::after {
+.row::before, .row::after {
   content: "";
   display: table;
   clear: both; }
@@ -143,15 +142,77 @@
     width: 91.66%; }
   .col-s-12 {
     width: 100%; }
-  .col-s-cleanoffset {
-    margin: 0; }
-  .cleear-s::before,
-  .cleear-s::after {
+  .cleear-s::before, .cleear-s::after {
     content: "";
     display: table;
     clear: both; } }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-m-1 {
+    width: 8.33%; }
+  .col-m-2 {
+    width: 16.66%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.33%; }
+  .col-m-5 {
+    width: 41.66%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.33%; }
+  .col-m-8 {
+    width: 66.66%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.33%; }
+  .col-m-11 {
+    width: 91.66%; }
+  .col-m-12 {
+    width: 100%; }
+  .cleear-s::before, .cleear-s::after {
+    content: "";
+    display: table;
+    clear: both; } }
+
+/*      - urzadzenia srednie,       */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-l-1 {
+    width: 8.33%; }
+  .col-l-2 {
+    width: 16.66%; }
+  .col-l-3 {
+    width: 25%; }
+  .col-l-4 {
+    width: 33.33%; }
+  .col-l-5 {
+    width: 41.66%; }
+  .col-l-6 {
+    width: 50%; }
+  .col-l-7 {
+    width: 58.33%; }
+  .col-l-8 {
+    width: 66.66%; }
+  .col-l-9 {
+    width: 75%; }
+  .col-l-10 {
+    width: 83.33%; }
+  .col-l-11 {
+    width: 91.66%; }
+  .col-l-12 {
+    width: 100%; }
+  .cleear-s::before, .cleear-s::after {
+    content: "";
+    display: table;
+    clear: both; } }
+
+/* settings for containers, fonts paddings etc*/
+/* sets background and border color */
+/*  large numbers   */
+/* sets width of the content*/
+@media screen and (max-width: 767px) {
   header .container {
     display: block; }
     header .container .menu-icon {
@@ -177,18 +238,36 @@
       color: white;
       background-color: #b88b58; }
       header .container .menu-icon button {
-        background-color: #000000; }
+        background-color: #000000;
+        color: #ffffff; }
   .hero .container h1, .hero .container h2, .hero .container h3 {
     font-size: 28px; }
   .hero .container h3 {
     font-size: 16px; }
   .hero .container .bullets ul {
     margin-bottom: 50px; }
+  .services .container .content {
+    width: 100%;
+    margin: 0 auto; }
+  .services .container [class*="col-"] {
+    border-top: 1px solid #aeaeae; }
+  .services .container [class*="col-"] {
+    padding-top: 10px;
+    height: 250px; }
+  .about-us .icon-container {
+    display: none; }
+  .our-team .container {
+    background-image: url("../images/our-team-bg-small.jpg");
+    background-size: auto; } }
+
+/*end of media*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services .container .content {
+    width: 100%;
+    margin: 0 auto; }
   .services .container [class*="col-"]:nth-child(1),
   .services .container [class*="col-"]:nth-child(2) {
     border-bottom: 1px solid #aeaeae; }
   .services .container [class*="col-"] {
     padding-top: 10px;
-    height: 200px; } }
-
-/*end of media*/
+    height: 250px; } }

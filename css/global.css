@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,800");
+body {
+  margin: 0; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto; }
+
 .awax-btn {
   text-align: center;
   background-color: #b88b58;
