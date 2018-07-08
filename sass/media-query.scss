@@ -140,6 +140,9 @@
                         padding: 10px 0;
                     }
                 }
+                .div-for-foto, .overlay {
+                    position: static;
+                }
                 [class*="col-"] .overlay {
                     height: 70px;
                     top: 130px;
