@@ -450,6 +450,9 @@ header .container {
   width: 80%;
   margin: 0 auto; }
 
+.our-projects #projectsMenuIcon {
+  display: none; }
+
 .our-projects .project-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,6 +587,11 @@ header .container {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .our-team .team-member P {
+    margin: 0; }
+  .our-team .team-member p:nth-child(2) {
+    margin-top: 20px;
+    font-weight: 700; }
   .our-team .team-member .social-media {
     margin-top: 20px; }
   .our-team .team-member .social {

@@ -256,6 +256,8 @@
     display: none; }
   .our-projects #menuProjects {
     display: none; }
+  .our-projects #projectsMenuIcon {
+    display: block; }
   .our-projects .container .content {
     width: 100%; }
     .our-projects .container .content #projectsMenuIcon {

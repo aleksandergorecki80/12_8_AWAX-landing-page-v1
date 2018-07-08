@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,800");
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
 
 .container {
   max-width: 1300px;
@@ -10,20 +11,17 @@ body {
 .awax-btn {
   text-align: center;
   background-color: #b88b58;
-  padding: 0.6rem 2.5rem !important;
-  border-radius: 30px !important;
+  padding: 0.6rem 2.5rem;
+  border-radius: 30px;
   color: #ffffff;
-  outline: none !important;
+  outline: none;
   text-transform: uppercase;
-  font-size: 11px !important;
-  font-weight: 700 !important; }
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer; }
   .awax-btn:hover {
     background-color: #89643a; }
-
-.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important; }
 
 .btn-container {
   margin: 20px auto;

@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: $main-font;
 }
 
 .container {
@@ -12,21 +13,18 @@ body {
 .awax-btn {
     text-align: center;
     background-color: $brand-color;
-    padding: 0.6rem 2.5rem !important;
-    border-radius: 30px !important; 
+    padding: 0.6rem 2.5rem;
+    border-radius: 30px; 
     color: $second-color;
-    outline: none !important; 
+    outline: none; 
     text-transform: uppercase;
-    font-size: 11px !important; 
-    font-weight: 700 !important;
+    font-size: 11px; 
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
     &:hover {
         background-color: darken($brand-color, 15);
     }
-}
-
-.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: none !important;
-    box-shadow: none !important;
 }
 
 .btn-container{
