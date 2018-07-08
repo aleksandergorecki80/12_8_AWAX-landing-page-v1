@@ -25,17 +25,30 @@ $(function(){
     var $projectsMenuIcon = $('#projectsMenuIcon');
     var $arrow = $('.fa-angle-right');
     $projectsMenuIcon.click(function(){
-        console.log('kki');
         if ($projectsMenu.css('display') == 'none'){
             $projectsMenu.css('display', 'block'); 
-            $arrow.css('transform', 'rotate(90deg)'); 
-        } else {
-            $projectsMenu.css('display', 'none'); 
-            $arrow.css('transform', 'rotate(0deg)'); 
-        }
-    }); 
+           $arrow.css({
+  '-webkit-transform' : 'rotate(90deg)',
+     '-moz-transform' : 'rotate(90deg)',  
+      '-ms-transform' : 'rotate(90deg)',  
+       '-o-transform' : 'rotate(90deg)',  
+          'transform' : 'rotate(90deg)',  
+               'zoom' : 1
 
-});
+    });
+       } 
+           else {
+            $projectsMenu.css('display', 'none'); 
+            $arrow.css({
+  '-webkit-transform' : 'rotate(0deg)',
+     '-moz-transform' : 'rotate(0deg)',  
+      '-ms-transform' : 'rotate(0deg)',  
+       '-o-transform' : 'rotate(0deg)',  
+          'transform' : 'rotate(0deg)',  
+               'zoom' : 1
+    });
+        }
+    });
 /*
 function showRulesSection() {
     
@@ -46,3 +59,4 @@ function showRulesSection() {
     }
 }
 */
+});

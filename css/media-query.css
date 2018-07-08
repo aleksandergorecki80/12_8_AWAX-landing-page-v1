@@ -235,8 +235,7 @@
       font-size: 24px;
       display: block;
       font-size: 24px;
-      color: white;
-      background-color: #b88b58; }
+      color: white; }
       header .container .menu-icon button {
         background-color: #000000;
         color: #ffffff; }
@@ -319,7 +318,8 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    padding: 0; }
     .footer .container .content .awax {
       text-align: center;
       margin-top: 20px; } }

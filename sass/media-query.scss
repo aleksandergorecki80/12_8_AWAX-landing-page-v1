@@ -34,8 +34,7 @@
             display: block;
             font-size: 24px;
             color: white;
-           // border: 1px solid white;
-            background-color: $brand-color;
+           
             button {
                 background-color: $main-color;
                 color: $second-color;
@@ -188,6 +187,7 @@
             .content {
                 width: 100%;
                 flex-direction: column-reverse;
+                padding: 0;
                 .awax {
                     text-align: center;
                     margin-top: 20px;
