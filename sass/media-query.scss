@@ -47,8 +47,6 @@
 
     .hero {
         .container{
-            .content{
-            }
             h1, h2, h3 {
                 font-size: 28px;
             }
@@ -92,7 +90,35 @@
             background-size: auto;
         }
     }
-
+    .social {
+        .container {
+            .content{
+                width: 90%;
+                .logo-socialmedia {
+                    margin: 10px 5px;
+                }
+                .logo-socialmedia:first-child{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .contact-us {
+        .content {
+            width: 90%;
+        }
+        .input-container {
+            width: 100%;
+        }
+    }
+    .contact-details {
+        .content {
+            width: 100%;
+            [class*="col-"]:nth-child(2){
+                display: block;
+            }
+        }
+    }
 
 
 } /*end of media*/

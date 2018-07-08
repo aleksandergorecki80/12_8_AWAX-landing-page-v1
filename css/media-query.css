@@ -258,7 +258,21 @@
     display: none; }
   .our-team .container {
     background-image: url("../images/our-team-bg-small.jpg");
-    background-size: auto; } }
+    background-size: auto; }
+  .social .container .content {
+    width: 90%; }
+    .social .container .content .logo-socialmedia {
+      margin: 10px 5px; }
+    .social .container .content .logo-socialmedia:first-child {
+      width: 100%; }
+  .contact-us .content {
+    width: 90%; }
+  .contact-us .input-container {
+    width: 100%; }
+  .contact-details .content {
+    width: 100%; }
+    .contact-details .content [class*="col-"]:nth-child(2) {
+      display: block; } }
 
 /*end of media*/
 @media screen and (min-width: 768px) and (max-width: 991px) {

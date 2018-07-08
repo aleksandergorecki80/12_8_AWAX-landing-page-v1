@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-   border: 1px solid red;   
+ /*  border: 1px solid red;   */
 }
 
 
@@ -96,6 +96,7 @@ header {
 
 .about-us {
     @include basicSectionSettings($main-color, $subheading-color, $second-color);
+    @include content(80%);
     .container {
         img {
             width: 100%;
@@ -370,23 +371,32 @@ header {
     @include basicSectionSettings($main-color, $subheading-color, $second-color);
     @include content(80%);
     .premium-offer {
+        img {
+            width: 100%;
+        }
         h5 {
             text-transform: uppercase;
             font-weight: 700;
+            margin: 10px 0 0 0;
         }
         ul{
             list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
         li {
-            margin-bottom: 15px;
+            margin: 0 0 15px 50px;
+            position: relative;
+            padding: 0;
         }
+
         li::before {
             content:'';
             background: url('../images/tick-icon.svg');/*url of image*/
             height: 34px;/*height of image*/
             width: 37px;/*width of image*/
             position: absolute;
-            left: -5px;
+            left: -50px;
             }
         p {
             font-size: 14px;
@@ -525,6 +535,9 @@ header {
             span {
                 margin-left: 5px;
             }
+        }
+        [class*="col-"]:nth-child(2){
+            display: none;
         }
     }
 }
