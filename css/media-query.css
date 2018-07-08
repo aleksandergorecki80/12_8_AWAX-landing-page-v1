@@ -244,8 +244,6 @@
     font-size: 28px; }
   .hero .container h3 {
     font-size: 16px; }
-  .hero .container .bullets ul {
-    margin-bottom: 50px; }
   .services .container .content {
     width: 100%;
     margin: 0 auto; }
@@ -256,6 +254,38 @@
     height: 250px; }
   .about-us .icon-container {
     display: none; }
+  .our-projects #menuProjects {
+    display: none; }
+  .our-projects .container .content {
+    width: 100%; }
+    .our-projects .container .content #projectsMenuIcon {
+      width: 50px;
+      height: 50px; }
+    .our-projects .container .content p {
+      margin: 0; }
+    .our-projects .container .content .project-menu {
+      position: absolute; }
+      .our-projects .container .content .project-menu ul {
+        border-radius: 0;
+        padding: 0 5px;
+        position: relative;
+        z-index: 100;
+        background-color: rgba(237, 237, 237, 0.5); }
+        .our-projects .container .content .project-menu ul li {
+          display: block; }
+          .our-projects .container .content .project-menu ul li a {
+            border-right: none; }
+    .our-projects .container .content .projects-gallery {
+      margin-top: 0; }
+      .our-projects .container .content .projects-gallery img {
+        height: 200px; }
+    .our-projects .container .content [class*="col-"] .overlay {
+      height: 70px;
+      top: 130px; }
+      .our-projects .container .content [class*="col-"] .overlay p {
+        display: block;
+        margin: 0;
+        padding: 0; }
   .our-team .container {
     background-image: url("../images/our-team-bg-small.jpg");
     background-size: auto; }
@@ -269,10 +299,28 @@
     width: 90%; }
   .contact-us .input-container {
     width: 100%; }
-  .contact-details .content {
-    width: 100%; }
-    .contact-details .content [class*="col-"]:nth-child(2) {
-      display: block; } }
+  .contact-details .container {
+    background-image: none; }
+    .contact-details .container .content {
+      padding: 0;
+      width: 100%; }
+      .contact-details .container .content [class*="col-"]:nth-child(2) {
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/map-s.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 150px; }
+  .footer .container .content {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .footer .container .content .awax {
+      text-align: center;
+      margin-top: 20px; } }
 
 /*end of media*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
