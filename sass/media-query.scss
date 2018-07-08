@@ -121,7 +121,8 @@
                         padding: 0 5px;
                         position: relative;
                         z-index: 100;
-                        background-color: rgba(237, 237, 237, 0.7);
+                     //   background-color: rgba(237, 237, 237, 0.7);
+                     background-color: $fourth-color;
                         li {
                             display: block;
                             a {

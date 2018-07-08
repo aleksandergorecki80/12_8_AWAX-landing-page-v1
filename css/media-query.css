@@ -283,7 +283,7 @@
         padding: 0 5px;
         position: relative;
         z-index: 100;
-        background-color: rgba(237, 237, 237, 0.7); }
+        background-color: #ededed; }
         .our-projects .container .content .project-menu ul li {
           display: block; }
           .our-projects .container .content .project-menu ul li a {
