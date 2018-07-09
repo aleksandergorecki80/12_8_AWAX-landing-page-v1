@@ -250,10 +250,12 @@
             }
             [class*="col-"]:first-child {
                 border-left: none;
+                border-right: 1px solid $subheading-color;
             }
             [class*="col-"]:nth-child(3) {
                 border-left: none;
                 border-top: 1px solid $subheading-color;
+                border-right: 1px solid $subheading-color;
             }
             [class*="col-"]:last-child {
                 border-right: none;

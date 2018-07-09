@@ -348,10 +348,12 @@
     padding-top: 10px;
     height: 250px; }
   .services .container [class*="col-"]:first-child {
-    border-left: none; }
+    border-left: none;
+    border-right: 1px solid #aeaeae; }
   .services .container [class*="col-"]:nth-child(3) {
     border-left: none;
-    border-top: 1px solid #aeaeae; }
+    border-top: 1px solid #aeaeae;
+    border-right: 1px solid #aeaeae; }
   .services .container [class*="col-"]:last-child {
     border-right: none;
     border-top: 1px solid #aeaeae; } }

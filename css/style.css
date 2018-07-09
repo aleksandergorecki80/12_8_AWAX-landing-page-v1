@@ -276,7 +276,7 @@ header .container {
       cursor: pointer; }
     @media screen and (min-width: 768px) and (max-width: 991px) {
       header .container .menu-icon {
-        display: block; } }
+        display: none; } }
 
 .hero {
   padding: 0;
