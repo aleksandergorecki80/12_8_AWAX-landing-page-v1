@@ -261,7 +261,19 @@ header .container {
           header .container nav ul a {
             padding: 45px 4px; } }
   header .container .menu-icon {
-    display: none; }
+    display: none;
+    margin-top: 10px;
+    font-size: 24px;
+    display: none;
+    color: white;
+    float: right;
+    padding: 5px;
+    border: 1px solid #ffffff; }
+    header .container .menu-icon #menuIcon {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px;
+      cursor: pointer; }
 
 .hero {
   padding: 0;

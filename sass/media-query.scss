@@ -24,22 +24,10 @@
                 }
             }
         }
+    
         .menu-icon {
-            margin-top: 10px;
-            font-size: 24px;
             display: block;
-            font-size: 24px;
-            color: white;
-            float: right;
-            display: block;
-            padding: 5px;
-            #menuIcon {
-                background-color: $main-color;
-                color: $second-color;
-                padding: 10px;
-                border: 1px solid $second-color;
-                cursor: pointer;
-            }
+
         }
     }
   }
@@ -250,6 +238,8 @@
 } /*end of media*/
 
 @media screen and (min-width: 768px) and (max-width: 991px)  {
+
+
     .services {
         .container{
             @include content(100%);

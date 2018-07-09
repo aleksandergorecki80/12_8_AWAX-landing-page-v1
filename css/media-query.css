@@ -229,20 +229,7 @@
           header .container nav ul a:hover {
             border-bottom: 0px; }
     header .container .menu-icon {
-      margin-top: 10px;
-      font-size: 24px;
-      display: block;
-      font-size: 24px;
-      color: white;
-      float: right;
-      display: block;
-      padding: 5px; }
-      header .container .menu-icon #menuIcon {
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px;
-        border: 1px solid #ffffff;
-        cursor: pointer; }
+      display: block; }
   .hero .container h1, .hero .container h2, .hero .container h3 {
     font-size: 28px; }
   .hero .container h3 {

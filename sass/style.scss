@@ -58,6 +58,19 @@ header {
         }
         .menu-icon {
             display: none;
+            margin-top: 10px;
+            font-size: 24px;
+            display: none;
+            color: white;
+            float: right;
+            padding: 5px;
+            border: 1px solid $second-color;
+            #menuIcon {
+                background-color: $main-color;
+                color: $second-color;
+                padding: 10px;
+                cursor: pointer;
+            }
         }
     }
 }
