@@ -217,7 +217,7 @@
   header .container {
     display: block; }
     header .container nav {
-      display: none; }
+      display: block; }
       header .container nav ul {
         display: block; }
         header .container nav ul li {
