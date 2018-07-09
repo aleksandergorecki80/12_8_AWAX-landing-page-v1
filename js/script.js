@@ -31,11 +31,12 @@ if (($menuIcon.css('display') == 'block') && ($menu.attr('data-state') == 'on') 
 
     var $projectsMenu = $('#menuProjects');
     var $projectsMenuIcon = $('#projectsMenuIcon');
-    var $arrow = $('.fa-angle-down');
+    var $arrow = document.getElementById('arrowDown');
+
     $projectsMenuIcon.click(function(){
         if ($projectsMenu.css('display') == 'none'){
             $projectsMenu.css('display', 'block'); 
-           $arrow.css({
+           $projectsMenuIcon.css({
                     '-webkit-transform' : 'rotate(180deg)',
                     '-moz-transform' : 'rotate(180deg)',  
                     '-ms-transform' : 'rotate(180deg)',  
@@ -45,7 +46,7 @@ if (($menuIcon.css('display') == 'block') && ($menu.attr('data-state') == 'on') 
        } 
            else {
             $projectsMenu.css('display', 'none'); 
-            $arrow.css({
+            $projectsMenuIcon.css({
                     '-webkit-transform' : 'rotate(0deg)',
                     '-moz-transform' : 'rotate(0deg)',  
                     '-ms-transform' : 'rotate(0deg)',  
