@@ -19,6 +19,9 @@ header {
         .logo {
             margin-right: 50px;
             display: inline-block;
+            @include mQ(768px, 991px){
+                margin-right: 40px;   
+               }
         }
         nav {
             color: $second-color;
@@ -28,13 +31,15 @@ header {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                
                 li {
                     display: inline-block;
                     font-family: $main-font;
                     font-weight: bold;
                     font-size: 12px;
                     padding: 50px 0;
+                    @include mQ(768px, 991px){
+                     font-size: 10px;   
+                    }
                 }
                 a {
                     //line-height: 100px;
@@ -45,6 +50,9 @@ header {
                         //color:red;
                         border-bottom: 5px solid $brand-color;
                     }
+                    @include mQ(768px, 991px){
+                        padding: 45px 4px;  
+                       }
                 }
             }
         }
@@ -114,7 +122,7 @@ header {
                 padding: 5px;
                 position: absolute;
                 top: -53px;
-                left: 1000px;
+                left: 85vw;
             }
         }
     }
