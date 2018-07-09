@@ -7,7 +7,7 @@
     .container{
         display: block;
         nav {
-            display: block;
+            display: none;
             ul {
                 display: block;
                 
@@ -238,7 +238,6 @@
 } /*end of media*/
 
 @media screen and (min-width: 768px) and (max-width: 991px)  {
-
 
     .services {
         .container{

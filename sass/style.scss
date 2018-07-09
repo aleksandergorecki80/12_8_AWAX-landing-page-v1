@@ -71,6 +71,9 @@ header {
                 padding: 10px;
                 cursor: pointer;
             }
+            @include mQ(768px, 991px){
+                display: block; 
+               }
         }
     }
 }
