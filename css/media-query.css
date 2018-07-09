@@ -241,13 +241,16 @@
     border-top: 1px solid #aeaeae;
     border-bottom: none;
     border-left: none;
-    border-right: none;
     padding-top: 10px;
     height: 250px; }
   .services .container [class*="col-"]:first-child {
-    border: none; }
+    border-left: none; }
+  .services .container [class*="col-"]:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid #aeaeae; }
   .services .container [class*="col-"]:last-child {
-    border-right: none; }
+    border-right: none;
+    border-top: 1px solid #aeaeae; }
   .about-us .icon-container {
     display: none; }
   .about-us p {

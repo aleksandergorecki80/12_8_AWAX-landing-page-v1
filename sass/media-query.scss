@@ -62,15 +62,19 @@
                 border-top: 1px solid $subheading-color;
                 border-bottom: none;
                 border-left: none;
-                border-right: none;
                 padding-top: 10px;
                 height: 250px;
             }
             [class*="col-"]:first-child {
-                border: none;
+                border-left: none;
+            }
+            [class*="col-"]:nth-child(3) {
+                border-left: none;
+                border-top: 1px solid $subheading-color;
             }
             [class*="col-"]:last-child {
                 border-right: none;
+                border-top: 1px solid $subheading-color;
             }
         }
     }
