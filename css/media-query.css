@@ -212,6 +212,7 @@
 /* sets background and border color */
 /*  large numbers   */
 /* sets width of the content*/
+/* for media querys */
 @media screen and (max-width: 767px) {
   header .container {
     display: block; }
@@ -299,14 +300,12 @@
     .our-projects .container .content .projects-gallery {
       margin-top: 0; }
       .our-projects .container .content .projects-gallery img {
-        height: 200px;
-        z-index: -200; }
+        height: 200px; }
       .our-projects .container .content .projects-gallery [class*="col-"] {
         padding: 10px 0; }
     .our-projects .container .content [class*="col-"] .overlay {
       height: 70px;
-      top: 130px;
-      z-index: -100; }
+      top: 130px; }
       .our-projects .container .content [class*="col-"] .overlay p {
         display: block;
         margin: 0;
