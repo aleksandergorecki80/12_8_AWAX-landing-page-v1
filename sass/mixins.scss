@@ -1,64 +1,62 @@
 /* settings for containers, fonts paddings etc*/
 @mixin basicSectionSettings($headerColor, $subHeaderColor, $backgroundColor) {
-    .container{
-        padding: 30px 0 40px 0;
-        background-color: $backgroundColor;
-        .row{
-            margin: 0;
-        }
+    .container {
+      padding: 30px 0 40px 0;
+      background-color: $backgroundColor;
+      .row {
+        margin: 0;
+      }
     }
     h3 {
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        color: $headerColor
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      color: $headerColor
     }
     h3+p {
-        @extend h3;
-        font-size: 12px;
-        font-weight: 600;
-        margin-bottom: 30px;
-        font-family: $main-font;
-        color: $subHeaderColor;
+      @extend h3;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-family: $main-font;
+      color: $subHeaderColor;
     }
     h4 {
-        @extend h3;
-        font-size: 16px;
+      @extend h3;
+      font-size: 16px;
     }
-    h4+p{
-        text-align: center;
-        font-weight: normal;
-        color: $subheading-color;
-        font-size: 12px;
-        
+    h4+p {
+      text-align: center;
+      font-weight: normal;
+      color: $subheading-color;
+      font-size: 12px;
     }
-}
-
-/* sets background and border color */
-@mixin containerColors($color) {
+  }
+  /* sets background and border color */
+  
+  @mixin containerColors($color) {
     border-top: 1px solid $container-borders;
     border-bottom: 1px solid $container-borders;
     background-color: $color;
-}
-
-/*  large numbers   */
-@mixin largeNumbers($color, $fontWeight) {
+  }
+  /*  large numbers   */
+  
+  @mixin largeNumbers($color, $fontWeight) {
     font-family: $numbers-font;
     font-weight: $fontWeight;
     color: $color;
     text-align: center;
-}
-
-/* sets width of the content*/
-@mixin content($width) {
+  }
+  /* sets width of the content*/
+  
+  @mixin content($width) {
     .content {
-        width: $width;
-        margin: 0 auto;
+      width: $width;
+      margin: 0 auto;
     }
-}
-
-@mixin roundIcons {
+  }
+  @mixin roundIcons {
     background-color: #bebebe;
     border-radius: 50%;
     color: $second-color;
@@ -67,9 +65,8 @@
     width: 27px;
     height: 27px;
     cursor: pointer;
-}
-
-@mixin inputField($color) {
+  }
+  @mixin inputField($color) {
     background-color: $color;
     border-top: none;
     border-right: none;
@@ -78,17 +75,15 @@
     width: 100%;
     padding: 10px 0;
     margin-bottom: 10px;
-}
-
-@mixin socialIconHover($color) {
+  }
+  @mixin socialIconHover($color) {
     &:hover {
-        background-color: darken($color, 15);
+      background-color: darken($color, 15);
     }
-}
-
-/* for media querys */
-@mixin mQ($min, $max){
-    @media screen and (min-width: $min) and (max-width: $max)  {
-        @content;
+  }
+  /* for media querys */
+  @mixin mQ($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+      @content;
     }
-}
+  }

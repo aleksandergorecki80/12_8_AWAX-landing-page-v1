@@ -1,88 +1,80 @@
 @import 'variables';
-
 body {
-    margin: 0;
-    font-family: $main-font;
+  margin: 0;
+  font-family: $main-font;
 }
-
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto;
 }
-
 .awax-btn {
-    text-align: center;
-    background-color: $brand-color;
-    padding: 0.6rem 2.5rem;
-    border-radius: 30px; 
-    color: $second-color;
-    outline: none; 
-    text-transform: uppercase;
-    font-size: 11px; 
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    &:hover {
-        background-color: darken($brand-color, 15);
-    }
+  text-align: center;
+  background-color: $brand-color;
+  padding: 0.6rem 2.5rem;
+  border-radius: 30px;
+  color: $second-color;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($brand-color, 15);
+  }
 }
-
-.btn-container{
-    margin: 20px auto;
-    text-align: center;
+.btn-container {
+  margin: 20px auto;
+  text-align: center;
 }
-
-.bullets{
-    text-align: center;
-    ul {
-        margin: 0;
-        padding: 0;
-        align-self: flex-end;
-        li {
-            display: inline-block;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            border-radius: 50%;
-            padding: 5px 5px;
-            cursor: pointer;
-            border: 1px solid $brand-color;
-        
-            &:hover{
-                background-color: $brand-color;
-            }
-        }
-    }
-}
-
-.go-up-container {
-    position: sticky;
-    top: 90vh;
-    margin-left: -10px;
-    cursor: pointer;
-    z-index: 100;
-    .go-up {
+.bullets {
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      border-radius: 50%;
+      padding: 5px 5px;
+      cursor: pointer;
+      border: 1px solid $brand-color;
+      &:hover {
         background-color: $brand-color;
-        box-shadow: none;
-        border-radius: 50%;
-        width: 46px;
-        height: 46px;
-        padding: 5px;
-        position: absolute;
-        top: -23px;
-        left: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .fa-chevron-up {
-            font-size: 24px;
-            color: $second-color;
-        }
+      }
     }
+  }
 }
-
+.go-up-container {
+  position: sticky;
+  top: 90vh;
+  margin-left: -10px;
+  cursor: pointer;
+  z-index: 100;
+  .go-up {
+    background-color: $brand-color;
+    box-shadow: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    padding: 5px;
+    position: absolute;
+    top: -23px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-chevron-up {
+      font-size: 24px;
+      color: $second-color;
+    }
+  }
+}
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
