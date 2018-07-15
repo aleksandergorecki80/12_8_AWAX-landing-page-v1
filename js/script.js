@@ -123,7 +123,7 @@ $(function() {
     );
   });
 
-  $(".go-up").click(() => {
+  $(".go-up-container").click(() => {
     $("html, body").animate(
       {
         scrollTop: $("header").offset().top
