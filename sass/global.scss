@@ -51,15 +51,15 @@ body {
 .go-up-container {
   position: sticky;
   top: 90vh;
-  margin-left: -10px;
+  margin-left: 0px;
   cursor: pointer;
   z-index: 100;
   .go-up {
     background-color: $brand-color;
     box-shadow: none;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 56px;
     padding: 5px;
     position: absolute;
     top: -23px;
