@@ -13,6 +13,8 @@ $(function() {
     }
   });
 
+console.log($menu.attr("data-state"));
+
   $(window).resize(function() {
     var windowWidth = window.innerWidth;
 

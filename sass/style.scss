@@ -195,6 +195,11 @@ header {
   }
   .projects-gallery {
     margin: 20px auto;
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   [class*="col-"] {
     img {

@@ -508,6 +508,16 @@ header .container {
 
 .our-projects .projects-gallery {
   margin: 20px auto; }
+  .our-projects .projects-gallery .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .our-projects [class*="col-"] img {
   -o-object-fit: cover;
