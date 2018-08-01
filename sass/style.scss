@@ -197,8 +197,8 @@ header {
     margin: 20px auto;
     .row{
       display: flex;
-      align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
   [class*="col-"] {

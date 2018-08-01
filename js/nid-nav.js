@@ -2,13 +2,13 @@ $(function() {
 	$( "#all" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== ''})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	});
 
 	$( "#photos" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") === 'photos'})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	   $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== 'photos'})
 	    .css({display:'none'});
@@ -17,7 +17,7 @@ $(function() {
 	$( "#banding" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") === 'banding'})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	   $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== 'banding'})
 	    .css({display:'none'});
@@ -26,7 +26,7 @@ $(function() {
  	$( "#adverts" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") === 'adverts'})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	   $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== 'adverts'})
 	    .css({display:'none'});
@@ -35,7 +35,7 @@ $(function() {
 	 $( "#development" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") === 'development'})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	   $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== 'development'})
 	    .css({display:'none'});
@@ -44,7 +44,7 @@ $(function() {
 	 $( "#misc" ).click(function() {
 	    $('.col-3').filter(function(){ 
 	    return $(this).data("group") === 'misc'})
-	    .css({display:'block'});
+	    .css({display:'initial'});
 	   $('.col-3').filter(function(){ 
 	    return $(this).data("group") !== 'misc'})
 	    .css({display:'none'});
