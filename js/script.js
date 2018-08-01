@@ -1,10 +1,9 @@
 $(function() {
-  var $menu = $("nav");
-  var $menuIcon = $("#menuIcon");
-  var $menuIconDiv = $(".menu-icon");
-  var $projectsMenu = $("#menuProjects");
-  var $projectsMenuIcon = $("#projectsMenuIcon");
-
+  const $menu = $("nav"),
+   $menuIcon = $("#menuIcon"),
+   $menuIconDiv = $(".menu-icon"),
+   $projectsMenu = $("#menuProjects"),
+   $projectsMenuIcon = $("#projectsMenuIcon");
 
   $menuIcon.click(function() {
     if ($menu.css("display") == "block") {
@@ -16,11 +15,8 @@ $(function() {
     }
   });
 
-console.log($menu.attr("data-state"));
-
   $(window).resize(function() {
-    var windowWidth = window.innerWidth;
-
+    const windowWidth = window.innerWidth;
     if (
       $menuIcon.css("display") == "block" &&
       $menu.attr("data-state") == "on" &&
